@@ -1,0 +1,5 @@
+
+Notka dla druzyny.
+
+Ten folder zawiera rzeczy potrzebne do utworzenia calej zagadki, w tym skrypty dedykowane do zagadki. Skrypty podstawowe niech beda
+w dedykowanym folderze.
