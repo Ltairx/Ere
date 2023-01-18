@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractTarget : MonoBehaviour
+public class Riddle : MonoBehaviour
 {    
 
     // Start is called before the first frame update
@@ -33,12 +33,9 @@ public class InteractTarget : MonoBehaviour
     /// <typeparam name="T"></typeparam>
     /// <param name="index"></param>
     /// <returns></returns>
-    public virtual Delegate GetFunction<T>(int index)
+    public virtual Delegate GetFunction(int index)
     {
-        if (typeof(float) == typeof(T))
-        {
-            return ((Action<float>) Move);
-        }
-        return null;
+        
+         return ((Action<float>) Move);        
     }
 }

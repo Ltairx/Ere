@@ -23,7 +23,7 @@ public class Interactable<T> : InteractableInterface {
     protected bool interactedLastFrame; //in case of being continously interacted
     private int interactCounter;
 
-    public InteractTarget target;
+    public Riddle riddle;
     public int funcIndex;
     protected Action<T> callFunc;    
     protected T valToSend;
@@ -31,9 +31,9 @@ public class Interactable<T> : InteractableInterface {
     // Start is called before the first frame update
     protected virtual void Start()    
     {
-        if (target != null)
+        if (riddle != null)
         {
-            callFunc = (Action<T>)target.GetFunction<T>(0);
+            callFunc = (Action<T>)riddle.GetFunction(0);
         }
     }
 

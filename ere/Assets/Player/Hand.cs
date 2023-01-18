@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class Hand : MonoBehaviour
 {
-    protected int INTERACTABLE_LAYER = 10;
+    protected int INTERACTABLE_LAYER;
 
     InteractableInterface hitGameobject;
     bool once=true;
 
     public float range = 10;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        
+        INTERACTABLE_LAYER = LayerMask.GetMask("Interactable");
+
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class Hand : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit)) //if hit interactable        
+        if (Physics.Raycast(ray, out hit, range, INTERACTABLE_LAYER)) //if hit interactable        
         {
             if (Vector3.Distance(hit.transform.position, this.transform.position) < range)
             {

@@ -9,6 +9,7 @@ public class CameraHand : Hand
     // Start is called before the first frame update
     void Start()
     {
+        base.Start();
         camera = GetComponent<Camera>();
     }
 
@@ -23,7 +24,7 @@ public class CameraHand : Hand
 
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, INTERACTABLE_LAYER)) //if hit interactable        
+        if (Physics.Raycast(ray, out hit,range, INTERACTABLE_LAYER)) //if hit interactable        
         {
             Debug.DrawRay(ray.origin ,ray.direction*3, Color.red,1);
             if (Vector3.Distance(hit.transform.position, this.transform.position) < range)

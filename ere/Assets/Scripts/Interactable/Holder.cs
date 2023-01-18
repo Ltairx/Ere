@@ -7,10 +7,15 @@ public class Holder<T> : Interactable<T>
 {
     public float DISTANCE = 2f;
 
+    public float lerpness = 0.05f; //seems to be ideal
+
     public override void Interact(Hand hand)
     {
         base.Interact(hand);
-        transform.position = hand.transform.position + hand.GetForwardVector()*DISTANCE;        
+
+        Vector3 newPos = Vector3.Lerp(transform.position, hand.transform.position + hand.GetForwardVector()*DISTANCE, lerpness + Time.deltaTime);
+        //transform.position += (newPos - transform.position) * Time.deltaTime;
+        transform.position= newPos;
     }
 }
 

@@ -2,7 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slider : Slider<float> {}
+public class Slider : Slider<float> {
+    protected override void LerpValToSend(float t)
+    {
+        valToSend = Mathf.Lerp(minVal, maxVal, t);
+    }
+}
+
 public class Slider<T> : Holder<T>
 {
     public GameObject minimumPos;
