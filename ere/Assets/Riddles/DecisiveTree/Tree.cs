@@ -4,15 +4,56 @@ using UnityEngine;
 
 public class Tree : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TreeNode X, Y, Z, N, S, W, E;
+
+    protected void ResetTree()
     {
-        
+        X.MatteMaterial();
+        Y.MatteMaterial();
+        Z.MatteMaterial();
+        N.MatteMaterial();
+        S.MatteMaterial();
+        W.MatteMaterial();
+        E.MatteMaterial();
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public void SetX(int x)
     {
-        
+        X.SetText("X("+x+")<=T");
+    }
+
+    public void SetY(int y)
+    {
+        Y.SetText("Y(" + y + ")<=T");
+    }
+    public void SetZ(int z)
+    {
+        Z.SetText("Z(" + z + ")<=T");
+    }
+
+    public void LightTree(DIRECTION direction)
+    {
+        ResetTree();
+        switch (direction)
+        {
+            case DIRECTION.NORTH:                
+                X.LightMaterial();
+                Y.LightMaterial();
+                N.LightMaterial();
+                break;
+            case DIRECTION.WEST:
+                X.LightMaterial();
+                S.LightMaterial();
+                break;
+            case DIRECTION.EAST:
+                Z.LightMaterial();
+                W.LightMaterial();
+                break;
+            case DIRECTION.SOUTH:
+                E.LightMaterial();                
+                break;
+        }
     }
 }

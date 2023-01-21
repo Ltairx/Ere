@@ -33,7 +33,7 @@ public class Interactable<T> : InteractableInterface {
     {
         if (riddle != null)
         {
-            callFunc = (Action<T>)riddle.GetFunction(0);
+            callFunc = (Action<T>)riddle.GetFunction(funcIndex);
         }
     }
 

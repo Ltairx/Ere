@@ -37,6 +37,7 @@ public class CameraHand : Hand
 
     public override Vector3 GetForwardVector()
     {
+        Debug.DrawRay(camera.ScreenPointToRay(Input.mousePosition).origin, camera.ScreenPointToRay(Input.mousePosition).direction*5f,Color.blue);
         return camera.ScreenPointToRay(Input.mousePosition).direction;
     }
 }

@@ -12,10 +12,15 @@ public class Holder<T> : Interactable<T>
     public override void Interact(Hand hand)
     {
         base.Interact(hand);
-
-        Vector3 newPos = Vector3.Lerp(transform.position, hand.transform.position + hand.GetForwardVector()*DISTANCE, lerpness + Time.deltaTime);
-        //transform.position += (newPos - transform.position) * Time.deltaTime;
-        transform.position= newPos;
+        Move(hand);
     }
+
+    protected virtual void Move(Hand hand)
+    {
+        Vector3 newPos = Vector3.Lerp(transform.position, hand.transform.position + hand.GetForwardVector() * DISTANCE, lerpness + Time.deltaTime);
+        //transform.position += (newPos - transform.position) * Time.deltaTime;
+        transform.position = newPos;
+    }
+
 }
 
