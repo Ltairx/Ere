@@ -18,19 +18,18 @@ public class Tree : MonoBehaviour
     }
 
 
-
     public void SetX(int x)
     {
-        X.SetText("X("+x+")<=T");
+        X.SetText("T<=" + x);
     }
 
     public void SetY(int y)
     {
-        Y.SetText("Y(" + y + ")<=T");
+        Y.SetText("T<=" + y);
     }
     public void SetZ(int z)
     {
-        Z.SetText("Z(" + z + ")<=T");
+        Z.SetText("T<=" + z);
     }
 
     public void LightTree(DIRECTION direction)

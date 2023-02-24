@@ -19,7 +19,7 @@ public class Riddle : MonoBehaviour
     }
 
     //test method
-    protected void Move(float posY)
+    private void Move(float posY)
     {
         Vector3 pos = transform.position;
         pos.y = 2 + posY;

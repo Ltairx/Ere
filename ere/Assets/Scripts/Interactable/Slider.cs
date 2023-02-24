@@ -118,21 +118,21 @@ public class Slider<T> : Holder<T>
 
     private void ClampPos()
     {        
-        Vector3 minPos = minimumPos.transform.position;
-        Vector3 maxPos = maximumPos.transform.position;
+        Vector3 minPos = minimumPos.transform.localPosition;
+        Vector3 maxPos = maximumPos.transform.localPosition;
 
         Vector3 AB = maxPos- minPos;
-        Vector3 AC = transform.position - minPos;
+        Vector3 AC = transform.localPosition - minPos;
 
         float t = AC.x/AB.x;        
-        transform.position = Vector3.Lerp(minPos, maxPos, t);
+        transform.localPosition = Vector3.Lerp(minPos, maxPos, t);
         
     }
 
     private void CalcVal()
     {
-        float distFromMin = minimumPos.transform.position.x - transform.position.x;
-        float MaxDist = minimumPos.transform.position.x - maximumPos.transform.position.x;
+        float distFromMin = minimumPos.transform.localPosition.x - transform.localPosition.x;
+        float MaxDist = minimumPos.transform.localPosition.x - maximumPos.transform.localPosition.x;
 
         float div = distFromMin / MaxDist;
 

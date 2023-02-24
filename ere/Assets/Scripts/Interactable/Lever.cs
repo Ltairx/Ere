@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-///zostawi³em na float bo wajcha jako tako nie wysy³a innych danych niz fakt dzia³ania
-public class Lever : Interactable<float>
+///zostawi³em na bool bo wajcha jako tako nie wysy³a innych danych niz fakt dzia³ania
+public class Lever : Interactable<bool>
 {
     public GameObject leverObject;//the which will be rotated
     public float rotationAngle = 30;//around x Axis
@@ -20,12 +20,12 @@ public class Lever : Interactable<float>
             On = !On;
             if (On)
             {
-                valToSend = 1;                
+                valToSend = true;                
                 StartCoroutine(RotateLever(-rotationAngle));
             }
             else
             {
-                valToSend = 0;
+                valToSend = false;
                 StartCoroutine(RotateLever(rotationAngle));
             }
 
@@ -44,7 +44,7 @@ public class Lever : Interactable<float>
     {
         rotating= true;//block interactions
         float startTime = Time.time;
-        Vector3 startRot = leverObject.transform.rotation.eulerAngles;
+        Vector3 startRot = leverObject.transform.localRotation.eulerAngles;
         float rotOffset = 0;
         while (Time.time < startTime + rotatingTime)
         {
@@ -52,11 +52,11 @@ public class Lever : Interactable<float>
             rotOffset = Mathf.Lerp(0, angle, t);
             Vector3 tempRot = startRot;
             tempRot.x += rotOffset;
-            leverObject.transform.rotation = Quaternion.Euler(tempRot);
+            leverObject.transform.localRotation = Quaternion.Euler(tempRot);
             yield return null;
         }
         startRot.x += angle;
-        leverObject.transform.rotation = Quaternion.Euler(startRot);
+        leverObject.transform.localRotation = Quaternion.Euler(startRot);
         rotating = false;
     }
 
