@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class TextIncrementer : MonoBehaviour
+public class Number : MonoBehaviour
 {
     private float time = 0.0f;
     private float interval = 1.0f;
