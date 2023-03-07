@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648267892492487560}
-  m_Layer: 0
+  - component: {fileID: 5845392453381537646}
+  - component: {fileID: 3573962502185922007}
+  m_Layer: 10
   m_Name: Button down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +34,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5845392453381537646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648267892492487561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6eb17c498cf38488df8679f2222ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 0}
+  funcIndex: 0
+--- !u!65 &3573962502185922007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648267892492487561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &648267892782430362
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +72,7 @@ GameObject:
   - component: {fileID: 648267892782430309}
   - component: {fileID: 648267892782430311}
   - component: {fileID: 648267892782430308}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +87,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648267892782430362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 29.842}
+  m_LocalPosition: {x: 0, y: 0, z: -0.503}
   m_LocalScale: {x: 0.99351597, y: 0.9857336, z: 0.36082757}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -67,7 +96,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.609, y: 3.314}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &648267892782430311
@@ -117,7 +146,7 @@ GameObject:
   - component: {fileID: 648267893687161982}
   - component: {fileID: 648267893687161983}
   - component: {fileID: 648267893687161980}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: Arrow Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +161,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648267893687161970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -30.343294}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0061662, y: 1.0208294, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -142,7 +171,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -12.687225, y: -3.3873842}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1101, y: 618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &648267893687161982
@@ -217,8 +246,7 @@ GameObject:
   - component: {fileID: 648267893748734658}
   - component: {fileID: 648267893748734671}
   - component: {fileID: 648267893748734668}
-  - component: {fileID: 648267893748734669}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648267893748734659}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.045058727, y: -0.059, z: -0.20282054}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.227, y: 0.126, z: 0.08295078}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -291,16 +319,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &648267893748734669
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648267893748734659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
