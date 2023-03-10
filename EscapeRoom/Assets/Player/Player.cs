@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     /// </summary>
     protected void Move(PlayerDirection direction)
     {
-        Vector3 cameraDirection = Camera.main.transform.forward;
+        Vector3 cameraDirection = camera.transform.forward;
         cameraDirection.y = 0; //to make it flat
         cameraDirection.Normalize(); //set length to 1
 

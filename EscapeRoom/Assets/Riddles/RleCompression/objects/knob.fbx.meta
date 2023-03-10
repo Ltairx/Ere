@@ -14,7 +14,7 @@ ModelImporter:
     second: Plane.030|Shader NodetreeAction.001
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
