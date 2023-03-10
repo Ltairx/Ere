@@ -1,9 +1,9 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-///zostawi³em na bool bo wajcha jako tako nie wysy³a innych danych niz fakt dzia³ania
+///zostawiÂ³em na bool bo wajcha jako tako nie wysyÂ³a innych danych niz fakt dziaÂ³ania
 public class Lever : Interactable<bool>
 {
     public GameObject leverObject;//the which will be rotated
@@ -13,14 +13,14 @@ public class Lever : Interactable<bool>
     private bool rotating = false;
 
     override protected void OnStartInteract(Hand hand)
-    {        
+    {
         if (!rotating)
         {
             //swap On state.
             On = !On;
             if (On)
             {
-                valToSend = true;                
+                valToSend = true;
                 StartCoroutine(RotateLever(-rotationAngle));
             }
             else
@@ -29,7 +29,7 @@ public class Lever : Interactable<bool>
                 StartCoroutine(RotateLever(rotationAngle));
             }
 
-            InteractTarget(); //czy mo¿e daæ to na koñcu korutyny, by dopiero po przejœciu dawa³o impuls?
+            InteractTarget(); //czy moÂ¿e daÃ¦ to na koÃ±cu korutyny, by dopiero po przejÅ“ciu dawaÂ³o impuls?
         }
     }
 
@@ -42,7 +42,7 @@ public class Lever : Interactable<bool>
     /// <returns></returns>
     protected IEnumerator RotateLever(float angle)
     {
-        rotating= true;//block interactions
+        rotating = true;//block interactions
         float startTime = Time.time;
         Vector3 startRot = leverObject.transform.localRotation.eulerAngles;
         float rotOffset = 0;
