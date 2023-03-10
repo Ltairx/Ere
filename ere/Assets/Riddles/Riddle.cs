@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Riddle : MonoBehaviour
+public class Riddle : FunctionGettable
 {    
 
     // Start is called before the first frame update
@@ -33,9 +33,10 @@ public class Riddle : MonoBehaviour
     /// <typeparam name="T"></typeparam>
     /// <param name="index"></param>
     /// <returns></returns>
-    public virtual Delegate GetFunction(int index)
+    public override Delegate GetFunction(int index)
     {
         
          return ((Action<float>) Move);        
     }
+
 }

@@ -23,7 +23,7 @@ public class Interactable<T> : InteractableInterface {
     protected bool interactedLastFrame; //in case of being continously interacted
     private int interactCounter;
 
-    public Riddle riddle;
+    public FunctionGettable riddle; //nie zmieniam nazwy bo inaczej unity g³upieje....
     public int funcIndex;
     protected Action<T> callFunc;    
     protected T valToSend;
@@ -34,6 +34,10 @@ public class Interactable<T> : InteractableInterface {
         if (riddle != null)
         {
             callFunc = (Action<T>)riddle.GetFunction(funcIndex);
+        }
+        else
+        {
+            Debug.Log("MISSING RIDDLE FOR INTERACTABLE FOR GAMEOBJECT: " + gameObject.name);
         }
     }
 
@@ -83,6 +87,10 @@ public class Interactable<T> : InteractableInterface {
     {
         if (callFunc != null) { 
             callFunc(valToSend);
+        }
+        else
+        {
+            Debug.Log("MISSING FUNCTION FOR: " + gameObject.name);
         }
     }
 }

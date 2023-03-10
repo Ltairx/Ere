@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1b760895211eaa7488fba68a3c64bbea
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - outputText: {instanceID: 0}
+  - FirstBinNumber: {instanceID: 0}
+  - SecBinaryNumber: {instanceID: 0}
+  - ThirdBinaryNumber: {instanceID: 0}
+  - FourthBinaryNumber: {instanceID: 0}
+  - FifthBinaryNumber: {instanceID: 0}
+  - SixthBinaryNumber: {instanceID: 0}
+  - SeventhBinaryNumber: {instanceID: 0}
+  - LightBulb: {instanceID: 0}
+  - BulbYellow: {instanceID: 0}
+  - BulbColor: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
