@@ -5,8 +5,9 @@ using UnityEngine;
 public class GateNOT : Gate
 {
     protected override void CheckInput()
-    {
+    {        
         output = !inputs[0].GetOutput();
+     
         if (output)
         {
             LightWires();
