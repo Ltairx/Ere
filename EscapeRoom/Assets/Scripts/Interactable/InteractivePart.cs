@@ -15,6 +15,4 @@ public class InteractivePart : InteractableInterface
     {
         parent.Interact(hand);//pass it to the parent
     }
-
-
 }

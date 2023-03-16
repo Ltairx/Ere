@@ -20,7 +20,26 @@ public class Hand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        SendOutlineRay();
+    }
+
+
+    /// <summary>
+    /// sends ray each frame. if it hits interactable object it turns on its outline
+    /// </summary>
+    protected virtual void SendOutlineRay()
+    {
+        Ray ray = new Ray(transform.position, transform.forward);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, range, INTERACTABLE_LAYER)) //if hit interactable        
+        {
+            if (Vector3.Distance(hit.transform.position, this.transform.position) < range)
+            {
+                hit.transform.gameObject.GetComponent<InteractableInterface>().ShowOutline();
+            }
+        }
     }
 
 

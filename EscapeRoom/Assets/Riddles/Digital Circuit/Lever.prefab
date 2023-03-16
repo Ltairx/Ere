@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a225a2c3087cf34dab13a29c08c6130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 0}
   parent: {fileID: 3635584908714323347}
 --- !u!1 &3635584908714323346
 GameObject:
@@ -246,6 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 102ad9c542b727c41a6dd272f1448e45, type: 2}
   riddle: {fileID: 5596370003047542000}
   funcIndex: 0
   leverObject: {fileID: 3969813534913230870}

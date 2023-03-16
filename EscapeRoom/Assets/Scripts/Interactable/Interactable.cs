@@ -29,23 +29,25 @@ public class Interactable<T> : InteractableInterface {
     protected T valToSend;
 
     // Start is called before the first frame update
-    protected virtual void Start()    
-    {
+    protected override void Start()    
+    {        
+        base.Start();
         if (riddle != null)
         {
             callFunc = (Action<T>)riddle.GetFunction(funcIndex);
         }
         else
         {
-            Debug.Log("MISSING RIDDLE FOR INTERACTABLE FOR GAMEOBJECT: " + gameObject.name);
+            Debug.LogWarning("MISSING RIDDLE FOR INTERACTABLE FOR GAMEOBJECT: " + gameObject.name);
         }
     }
 
     /// <summary>
     /// used only for checking contunuous interaction (holding button for example)
     /// </summary>
-    protected void Update()
+    protected override void Update()
     {
+        base.Update();
         if (interactCounter > 0) { interactCounter--; interactedLastFrame = true; };
         if (interactCounter == 0) interactedLastFrame = false;
 

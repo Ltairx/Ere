@@ -13,6 +13,22 @@ public class CameraHand : Hand
         camera = GetComponent<Camera>();
     }
 
+    protected override void SendOutlineRay()
+    {
+        
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, range, INTERACTABLE_LAYER)) //if hit interactable        
+        {            
+            if (Vector3.Distance(hit.transform.position, this.transform.position) < range)
+            {                
+                hit.transform.gameObject.GetComponent<InteractableInterface>().ShowOutline();
+            }
+        }
+    }
+
 
     /// <summary>
     /// sends Ray from camera and position on screen and interact with hit object
@@ -25,8 +41,7 @@ public class CameraHand : Hand
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit,range, INTERACTABLE_LAYER)) //if hit interactable        
-        {
-            Debug.DrawRay(ray.origin ,ray.direction*3, Color.red,1);
+        {            
             if (Vector3.Distance(hit.transform.position, this.transform.position) < range)
             {
                 return hit.transform.gameObject.GetComponent<InteractableInterface>();
@@ -34,6 +49,8 @@ public class CameraHand : Hand
         }
         return null;
     }
+
+
 
     public override Vector3 GetForwardVector()
     {

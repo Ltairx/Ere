@@ -5,7 +5,7 @@ using UnityEngine;
 public class Holder : Holder<float> {}
 public class Holder<T> : Interactable<T>
 {
-    public float DISTANCE = 2f;
+    public float DISTANCE = 1f;
 
     public float lerpness = 0.05f; //seems to be ideal
 

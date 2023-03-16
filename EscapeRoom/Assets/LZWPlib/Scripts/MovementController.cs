@@ -500,7 +500,7 @@ public class MovementController : MonoBehaviour
 
     Vector3 GetWalkDirection()
     {
-        Vector3 res = GetKeyboardMoveInput();
+        Vector3 res = GetKeyboardMoveInput();        
 
         res.x *= config.walking.strafeSpeedMultiplier;
         if (res.z < 0)
