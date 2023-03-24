@@ -16,12 +16,7 @@ public class DecisiveTree : Riddle
     private int simX=15, simY=15, simZ=15;
 
 
-    protected bool simulating = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    protected bool simulating = false;        
 
     // Update is called once per frame
     void Update()
@@ -176,6 +171,14 @@ public class DecisiveTree : Riddle
             default:
                 return (Action<float>)StartSimulating;
         }
+    }
+
+    public override float GetSolvePercentage()
+    {
+        
+
+
+        return 0f;
     }
 
 }

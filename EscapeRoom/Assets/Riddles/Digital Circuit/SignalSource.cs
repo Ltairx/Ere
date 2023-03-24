@@ -10,7 +10,7 @@ using UnityEngine;
 /// èrÛd≥o synga≥u dziedziczy po zagadce przez udostÍpnianie i tak juø publicznej metody setinput.
 /// Ale nie chcia≥em modyfikowaÊ jakoú dziwnie kodu düwigni, a w≥asciwie samej klasy bazowej Interactable.
 /// </summary>
-public class SignalSource : Riddle 
+public class SignalSource : FunctionGettable 
 {
     protected bool output = false;
     public Wire[] childWires;

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -43055666, guid: d637507f4bf30a04ba1abb4dbbde2767, type: 3}
+  m_Name: AppMetadata
+  m_EditorClassIdentifier: 
+  name: EscapeRoom
+  aliases: []
+  tags: []
+  authors: []
+  shortDescription: 
+  longDescription: 
+  tools:
+  - Unity 2019.4.40f1
+  LzwpLibVersion: 2.8ns
+  appGUID: 8BC0179D4D05426C956637BE155AF756
+  buildGUID: 
+  defaultConfig:
+    obstacleWallWarningScaleMultiplier: 1
+    masterInstanceCursorVisible: 1
+    slaveInstanceCursorVisible: 0
+    setMaxFov: 0
+    allowHDR: 0
+    allowMSAA: 0
+    setRenderingPath: 0
+    renderingPath: 3

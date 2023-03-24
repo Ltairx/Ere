@@ -2,14 +2,24 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameManager;
 
 public class Riddle : FunctionGettable
-{    
+{
+    public Room room;
+    public Degree degree;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-        
+        if (room != null)
+        {
+            room.AddRiddle(this,degree); 
+        }
+        else
+        {
+            Debug.LogError("Riddle: " + gameObject.name + " has missing room reference");
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +47,16 @@ public class Riddle : FunctionGettable
     {
         
          return ((Action<float>) Move);        
+    }
+
+    /// <summary>
+    /// function returning how much is the riddle solved.
+    /// Used in the game summary, to show 
+    /// </summary>
+    /// <returns></returns>
+    public virtual float GetSolvePercentage()
+    {
+        return 0f;
     }
 
 }
