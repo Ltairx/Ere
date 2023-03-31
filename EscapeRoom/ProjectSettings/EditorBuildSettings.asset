@@ -4,5 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Delete the scene.unity
+    guid: 1a8914922888d684a95427bdac24057b
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: be3aa6dad310707448f82511fc7a354b,
+      type: 2}

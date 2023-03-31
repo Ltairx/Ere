@@ -67,7 +67,7 @@ public class InteractableInterface : MonoBehaviour
     virtual public void Interact(Hand hand){}
     virtual public void ShowOutline(){
         outlineShown = true;
-        outlineProperties.SetInt("Active", 1);
+        outlineProperties.SetInt("_Active", 1);
         outlineTicks = 2;
         if (renderer != null)
         {
@@ -78,7 +78,7 @@ public class InteractableInterface : MonoBehaviour
     virtual protected void HideOutline()
     {
         outlineShown = false;
-        outlineProperties.SetInt("Active", 0);
+        outlineProperties.SetInt("_Active", 0);
         if (renderer != null)
         {
             renderer.SetPropertyBlock(outlineProperties);
