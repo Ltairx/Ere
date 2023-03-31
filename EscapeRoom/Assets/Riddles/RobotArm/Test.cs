@@ -6,11 +6,15 @@ using UnityEngine;
 public class Test : Riddle
 {
 
-    public GameObject kostka;
+    public GameObject Base;
+    public GameObject Arm1;
+    public GameObject Arm2;
+    public GameObject Wrist;
+    public GameObject Finger1;
+    public GameObject Finger2;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Coroute());
     }
 
     // Update is called once per frame
@@ -22,7 +26,7 @@ public class Test : Riddle
     {
         switch (index)
         {
-            case 0: //wpisanie komendy height
+            case 9: //wpisanie komendy height
                 return (Action<float>)function;
             default:
                 return null;
@@ -31,22 +35,34 @@ public class Test : Riddle
 
     void function(float not_used)
     {
-        
+        StartCoroutine(Coroute());
     }
 
     IEnumerator Coroute()
     {
         float startTime = Time.time;
-        float duration = 0.9f;
-        Vector3 startRot = kostka.transform.localRotation.eulerAngles;
-        Vector3 endRot = new Vector3(0, 30, 0);
-        Vector3 obrot;
+        float duration = 0.4f;
+        Quaternion startRot;
+        Quaternion endRot;
+        Quaternion startRot2;
+        Quaternion endRot2;
+        Quaternion startRot3;
+        Quaternion endRot3;
+        float val = 20;
+
+        startRot = Arm1.transform.localRotation;
+        endRot = startRot * Quaternion.Euler(val, 0, 0);
+        startRot2 = Arm2.transform.localRotation;
+        endRot2 = startRot2 * Quaternion.Euler(2*val, 0, 0); //rotation of arm2
+        startRot3 = Wrist.transform.localRotation;
+        endRot3 = startRot3 * Quaternion.Euler(2*val, 0, 0); //rotation of wrist
 
         while (Time.time < startTime + duration)
         {
             float procent = (Time.time - startTime) / duration;
-            obrot = Vector3.Lerp(startRot, endRot, procent);
-            kostka.transform.localRotation = Quaternion.Euler(obrot);
+            Arm1.transform.localRotation = Quaternion.Lerp(startRot, endRot, procent);
+            Arm2.transform.localRotation = Quaternion.Lerp(startRot2, endRot2, procent);
+            Wrist.transform.localRotation = Quaternion.Lerp(startRot3, endRot3, procent);
             yield return null;
         }
     }
