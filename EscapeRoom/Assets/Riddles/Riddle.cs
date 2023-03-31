@@ -59,4 +59,18 @@ public class Riddle : FunctionGettable
         return 0f;
     }
 
+
+    /// <summary>
+    /// function which should be called when the riddle is solved.
+    /// It's called by the riddle itself!
+    /// 
+    /// Primarly informs the room of being solved.
+    /// </summary>
+    protected virtual void OnSolve()
+    {
+        if (room != null)
+        {
+            room.RiddleSolved();
+        }
+    }
 }
