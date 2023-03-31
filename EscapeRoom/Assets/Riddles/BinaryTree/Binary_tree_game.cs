@@ -14,12 +14,28 @@ public class Binary_tree_game : Riddle
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 10; i++)
+        int[] tab = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        int randomNumber;
+        int next;
+        bool found = true;
+        for (int i = 0; i < 10; i++)
         {
-            float randomNumber = Random.Range(1, 99);
-            starting_array[i] = (int) randomNumber;
-            ending_array[i] = i;
-            node_value_array[i] = i;
+            while (found)
+            {
+                randomNumber = Random.Range(1, 99);
+                next = randomNumber / 10;
+                if (tab[next] != -1)
+                {
+                    tab[next] = -1;
+                    found = false;
+                    starting_array[i] = randomNumber;
+                    ending_array[i] = i;
+                    node_value_array[i] = i;
+                }
+            }
+            found = true;
+            
+            
             Nodes[i].GetComponent<Node_script>().Set_knob_number(i);
             Nodes[i].GetComponent<Node_script>().Set_knob_value(starting_array[i]);
         }
