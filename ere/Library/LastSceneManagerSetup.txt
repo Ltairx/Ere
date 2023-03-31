@@ -1,0 +1,5 @@
+sceneSetups:
+- path: C:/Users/Ignacy/Documents/GitHub/Ere/EscapeRoom/Assets/Scenes/Ignacy_binary_tree.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
