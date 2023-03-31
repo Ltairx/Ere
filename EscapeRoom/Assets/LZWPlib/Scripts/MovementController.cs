@@ -696,7 +696,7 @@ public class MovementController : MonoBehaviour
         // get a normal for the surface that is being touched to move along it
         RaycastHit hitInfo;
         Physics.SphereCast(transform.position + characterController.center, characterController.radius, Vector3.down, out hitInfo, characterController.height / 2f);
-        desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
+        desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal);//.normalized;
 
         walkingCC_moveDir.x = desiredMove.x * currentSpeed;
         walkingCC_moveDir.z = desiredMove.z * currentSpeed;

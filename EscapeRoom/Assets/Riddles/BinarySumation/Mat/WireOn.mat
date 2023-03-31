@@ -21,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WireOn
-  m_Shader: {fileID: -6465566751694194690, guid: 744aa6456aeb99f4b8c0f81e56085580,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: bb28874b10779cc4e96e277a924873ce, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -54,8 +53,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 04679f12fbc70b94b838a9ebb108521d, type: 3}
+        m_Scale: {x: 0.72, y: 2.1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -95,8 +94,11 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _ScaleX: 1
+    - _ScaleY: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 10
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
@@ -105,4 +107,6 @@ Material:
     - _speed: 2
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 1, g: 0.76375884, b: 0, a: 1}
+    - _Color2: {r: 0.18396229, g: 1, b: 0.7388528, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
