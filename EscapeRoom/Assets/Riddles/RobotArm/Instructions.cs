@@ -33,13 +33,32 @@ public class Instructions: MonoBehaviour
         busy(1f);
         finished = true;
     }
+    protected IEnumerator reverse_command()
+    {
+        finished = false;
+        float startTime = Time.time;
+        float percentage = 0;
+        while (Time.time < startTime + duration)
+        {
+            percentage = (Time.time - startTime) / duration;
+            reverse_busy(percentage);
+            yield return null;
+        }
+        reverse_busy(1f);
+        finished = true;
+    }
     public virtual void Run()
     {
         StartCoroutine(command());
+    }
+    public virtual void Reverse_run()
+    {
+        StartCoroutine(reverse_command());
     }
     public bool Finished()
     {
         return finished;
     }
     protected virtual void busy(float perc){}
+    protected virtual void reverse_busy(float perc){}
 }

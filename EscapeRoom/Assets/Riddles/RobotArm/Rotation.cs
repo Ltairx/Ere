@@ -19,6 +19,15 @@ public class Rotation : Instructions
         startRot = Base.transform.localRotation;
         endRot = startRot * Quaternion.Euler(0, val, 0); //rotation of base
         base.Run();
-        Debug.Log((startRot, endRot));
+    }
+    protected override void reverse_busy(float perc)// tu w ogóle nie wchodzi program
+    {
+        Base.transform.localRotation = Quaternion.Lerp(startRot, endRot, perc);
+    }
+    public override void Reverse_run()
+    {
+        startRot = Base.transform.localRotation;
+        endRot = startRot * Quaternion.Euler(0, -val, 0); //rotation of base
+        base.Reverse_run();
     }
 }
