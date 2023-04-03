@@ -58,7 +58,7 @@ public class RobotCommunicator : Riddle
     // Update is called once per frame
     void Update()   
     {
-        height_text.text = open.ToString();
+        //height_text.text = open.ToString();
         //rotation_text.text = iterator.ToString(); do debugowania
     }
     public override Delegate GetFunction(int index)
@@ -95,6 +95,7 @@ public class RobotCommunicator : Riddle
     }
     void height_command(float not_used)
     {
+        Debug.Log("wchodzi");
         if (done)
         { 
             if (iterator < 12)
@@ -206,7 +207,7 @@ public class RobotCommunicator : Riddle
         {
             height_value = -40;
         }
-        height_text.text = height_value.ToString() + "0mm";
+        height_text.text = height_value.ToString() + "cm";
     }
     void increase_rot(float not_used)
     {
@@ -237,7 +238,7 @@ public class RobotCommunicator : Riddle
         {
             height_value = 40;
         }
-        height_text.text = height_value.ToString() + "0mm";
+        height_text.text = height_value.ToString() + "cm";
     }
     void decrease_rot(float not_used)
     {
@@ -260,6 +261,20 @@ public class RobotCommunicator : Riddle
                 yield return null;
             }
         }
-        done = true;
+        StartCoroutine(Reverse_queue());
+        //done = true;
     }    
+    IEnumerator Reverse_queue()
+    {
+        foreach ((operations o, Instructions instruction) com in queue.Reverse<(operations, Instructions)>())
+        {
+            //if(stop) break;
+            com.instruction.Reverse_run();
+            while (!com.instruction.Finished())
+            {
+                yield return null;
+            }
+        }
+        done = true;
+    }
 }

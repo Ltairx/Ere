@@ -29,11 +29,40 @@ public class Fingers : Instructions
         Finger2.transform.localPosition = Vector3.Lerp(startRot2, endRot2, perc);
     }
     public override void Run()
-    {
+    {   
+        if(this.val == 0) 
+        {
+            Grabber.grabbed = true;
+        }
+        else
+        {
+            Grabber.grabbed = false;
+        }
         startRot = Finger1.transform.localPosition;
         endRot = startRot + new Vector3(value, 0, 0); //transposition of finger1
         startRot2 = Finger2.transform.localPosition;
         endRot2 = startRot2 + new Vector3(-value, 0, 0); //transposition of finger2
+        base.Run();
+    }
+    protected override void reverse_busy(float perc)// tu w ogóle nie wchodzi program
+    {
+        Finger1.transform.localPosition = Vector3.Lerp(startRot, endRot, perc);
+        Finger2.transform.localPosition = Vector3.Lerp(startRot2, endRot2, perc);
+    }
+    public override void Reverse_run()
+    {
+        if (this.val == 0)
+        {
+            Grabber.grabbed = false;
+        }
+        else
+        {
+            Grabber.grabbed = true;
+        }
+        startRot = Finger1.transform.localPosition;
+        endRot = startRot + new Vector3(-value, 0, 0); //transposition of finger1
+        startRot2 = Finger2.transform.localPosition;
+        endRot2 = startRot2 + new Vector3(value, 0, 0); //transposition of finger2
         base.Run();
     }
 }
