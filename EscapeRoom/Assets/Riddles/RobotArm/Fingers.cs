@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 public class Fingers : Instructions
@@ -9,19 +8,19 @@ public class Fingers : Instructions
     Vector3 endRot;
     Vector3 startRot2;
     Vector3 endRot2;
-    float value = 0.00085f; 
+    private float value = 0.00085f;
 
     private void Start()
     {
         //duration = 1f;
-        //if(this.val == 0)
-        //{
-        //    value = -1 * Mathf.Abs(value);
-        //}
-        //else
-        //{
-        //    value = Mathf.Abs(value);
-        //}
+        if(this.val == 0)
+        {
+            value = Mathf.Abs(value);
+        }
+        else
+        {
+            value = -1* Mathf.Abs(value);
+        }
     }
 
     protected override void busy(float perc)
@@ -32,9 +31,9 @@ public class Fingers : Instructions
     public override void Run()
     {
         startRot = Finger1.transform.localPosition;
-        endRot = startRot + new Vector3(value, 0, 0); //rotation of finger1
+        endRot = startRot + new Vector3(value, 0, 0); //transposition of finger1
         startRot2 = Finger2.transform.localPosition;
-        endRot2 = startRot2 + new Vector3(-value, 0, 0); //rotation of finger2
-
+        endRot2 = startRot2 + new Vector3(-value, 0, 0); //transposition of finger2
+        base.Run();
     }
 }

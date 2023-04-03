@@ -25,7 +25,6 @@ public class RobotCommunicator : Riddle
     private Quaternion startArm1;
     private Quaternion startArm2;
     private Quaternion startWrist;
-    
 
     private int rotation_value = 0;
     private int height_value = 0;
@@ -34,12 +33,15 @@ public class RobotCommunicator : Riddle
     private List<(operations, Instructions instruction)> queue = new List<(operations, Instructions instruction)>();
     private int iterator = 0;
 
-    private bool stop = false;
+    //private bool stop = false;
     private bool done = true;
+    private bool open = true;
 
     private enum operations {height, rotation, fingers}
-    void Start()
+
+    protected override void Start()
     {
+        //base.Start();
         Instructions.Base = Base;
         Instructions.Arm1 = Arm1;
         Instructions.Arm2 = Arm2;
@@ -56,7 +58,7 @@ public class RobotCommunicator : Riddle
     // Update is called once per frame
     void Update()   
     {
-        //height_text.text = queue.Count.ToString();
+        height_text.text = open.ToString();
         //rotation_text.text = iterator.ToString(); do debugowania
     }
     public override Delegate GetFunction(int index)
@@ -93,39 +95,65 @@ public class RobotCommunicator : Riddle
     }
     void height_command(float not_used)
     {
-        if (iterator < 12)
-        {
-            Height height = commands_text[iterator].gameObject.AddComponent<Height>();
-            height.setval(height_value);
-            queue.Add((operations.height, height));
-            commands_text[iterator].text = "change height_value " + height_value.ToString();
+        if (done)
+        { 
+            if (iterator < 12)
+            {
+                Height height = commands_text[iterator].gameObject.AddComponent<Height>();
+                height.setval(height_value);
+                queue.Add((operations.height, height));
+                commands_text[iterator].text = "change height_value " + height_value.ToString();
+            }
+            else iterator = 11;
+            iterator++;
         }
-        else iterator = 11;
-        iterator++;
     }
     void rotation_command(float not_used)
     {
-        if (iterator < 12)
+        if (done)
         {
-            Rotation rotation = commands_text[iterator].gameObject.AddComponent<Rotation>();
-            rotation.setval(rotation_value);
-            queue.Add((operations.rotation, rotation));
-            commands_text[iterator].text = "change rotation_value " + rotation_value.ToString();
+            if (iterator < 12)
+            {
+                Rotation rotation = commands_text[iterator].gameObject.AddComponent<Rotation>();
+                rotation.setval(rotation_value);
+                queue.Add((operations.rotation, rotation));
+                commands_text[iterator].text = "change rotation_value " + rotation_value.ToString();
+            }
+            else iterator = 11;
+            iterator++;
         }
-        else iterator = 11;
-        iterator++;
-}
+    }
     void fingers_command(float not_used)
     {
-        if (iterator < 12)
+        if (done)
         {
-            Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
-            fingers.setval(fingers_state);
-            queue.Add((operations.fingers, fingers));
-            commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
+            if(open && fingers_state == 0)
+            {
+                if (iterator < 12)
+                {
+                    Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
+                    fingers.setval(fingers_state);
+                    queue.Add((operations.fingers, fingers));
+                    commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
+                    open = false;
+                }
+                else iterator = 11;
+                iterator++;
+            }
+            else if(!open && fingers_state == 1)
+            {
+                if (iterator < 12)
+                {
+                    Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
+                    fingers.setval(fingers_state);
+                    queue.Add((operations.fingers, fingers));
+                    commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
+                    open = true;
+                }
+                else iterator = 11;
+                iterator++;
+            }
         }
-        else iterator = 11;
-        iterator++;
     }
     void  start_command(float not_used) 
     {
@@ -141,26 +169,34 @@ public class RobotCommunicator : Riddle
     //}
     void reset_command(float not_used)
     {
-        //stop_command(not_used);
-        if (iterator > 11) iterator = 11;
-        for (int i = 0; i <= iterator; i++)
+        if (done)
         {
-            Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
-            commands_text[i].text = "";
+            //stop_command(not_used);
+            if (iterator > 11) iterator = 11;
+            for (int i = 0; i <= iterator; i++)
+            {
+                Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
+                commands_text[i].text = "";
+            }
+            queue.Clear();
+            open = true;
+            iterator = 0;
         }
-        queue.Clear();
-        iterator = 0;
     }
     void delline_command(float not_used)
     {
-        //stop_command(not_used);
-        iterator--;
-        if (iterator < 0) iterator = 0;
-        Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
-        commands_text[iterator].text = "";
-        if (queue.Count > 0)
+        if (done)
         {
-            queue.RemoveAt(queue.Count - 1);
+            //stop_command(not_used);
+            iterator--;
+            if (iterator < 0) iterator = 0;
+            Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
+            commands_text[iterator].text = "";
+            if (queue.Count > 0)
+            {
+                queue.RemoveAt(queue.Count - 1);
+                open = !open;
+            }
         }
     }
     void increase_height(float not_used) 
@@ -214,7 +250,7 @@ public class RobotCommunicator : Riddle
     }
     IEnumerator Queue_exe()
     {
-        stop = false;
+        //stop = false;
         foreach ((operations o, Instructions instruction) com in queue)
         {
             //if(stop) break;

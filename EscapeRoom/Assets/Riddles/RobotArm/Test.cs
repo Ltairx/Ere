@@ -41,28 +41,38 @@ public class Test : Riddle
     IEnumerator Coroute()
     {
         float startTime = Time.time;
-        float duration = 0.4f;
-        Quaternion startRot;
-        Quaternion endRot;
-        Quaternion startRot2;
-        Quaternion endRot2;
-        Quaternion startRot3;
-        Quaternion endRot3;
-        float val = 20;
+        float duration = 1f;
+        //Quaternion startRot;
+        //Quaternion endRot;
+        //Quaternion startRot2;
+        //Quaternion endRot2;
+        //Quaternion startRot3;
+        //Quaternion endRot3;
+        //float val = 20;
 
-        startRot = Arm1.transform.localRotation;
-        endRot = startRot * Quaternion.Euler(val, 0, 0);
-        startRot2 = Arm2.transform.localRotation;
-        endRot2 = startRot2 * Quaternion.Euler(2*val, 0, 0); //rotation of arm2
-        startRot3 = Wrist.transform.localRotation;
-        endRot3 = startRot3 * Quaternion.Euler(2*val, 0, 0); //rotation of wrist
+        Vector3 startRot;   
+        Vector3 endRot;
+        Vector3 startRot2;
+        Vector3 endRot2;
+        float value = 0.00085f;
+
+        //startRot = Arm1.transform.localRotation;
+        //endRot = startRot * Quaternion.Euler(val, 0, 0);
+        //startRot2 = Arm2.transform.localRotation;
+        //endRot2 = startRot2 * Quaternion.Euler(2*val, 0, 0); //rotation of arm2
+        //startRot3 = Wrist.transform.localRotation;
+        //endRot3 = startRot3 * Quaternion.Euler(2*val, 0, 0); //rotation of wrist
+
+        startRot = Finger1.transform.localPosition;
+        endRot = startRot + new Vector3(value, 0, 0); //transposition of finger1
+        startRot2 = Finger2.transform.localPosition;
+        endRot2 = startRot2 + new Vector3(-value, 0, 0); //transposition of finger2
 
         while (Time.time < startTime + duration)
         {
             float procent = (Time.time - startTime) / duration;
-            Arm1.transform.localRotation = Quaternion.Lerp(startRot, endRot, procent);
-            Arm2.transform.localRotation = Quaternion.Lerp(startRot2, endRot2, procent);
-            Wrist.transform.localRotation = Quaternion.Lerp(startRot3, endRot3, procent);
+            Finger1.transform.localPosition = Vector3.Lerp(startRot, endRot, procent);
+            Finger2.transform.localPosition = Vector3.Lerp(startRot2, endRot2, procent);
             yield return null;
         }
     }
