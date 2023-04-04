@@ -52,13 +52,16 @@ namespace BinarySumation
             }
             else
             {
-                if (srcWires[0].on)
+                if (srcWires.Length > 0)
                 {
-                    renderer.material = matOn;
-                }
-                else
-                {
-                    renderer.material = matOff;
+                    if (srcWires[0].on)
+                    {
+                        renderer.material = matOn;
+                    }
+                    else
+                    {
+                        renderer.material = matOff;
+                    }
                 }
             }
         }
