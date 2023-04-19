@@ -430,6 +430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 186100292}
   knob_number: 0
   value: 0
@@ -1486,10 +1488,50 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 412582594604372369, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412582594604372369, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160739303131233095, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: src1
+      value: 
+      objectReference: {fileID: 1458934515}
+    - target: {fileID: 1160739303131233095, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: sfx_1
+      value: 
+      objectReference: {fileID: 8300000, guid: acb41e5a558a4e84ea7d2236002559b3, type: 3}
     - target: {fileID: 2862672613458845970, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.322
+      value: -3.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990056154724116240, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181829261634308519, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4181829261634308519, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454819063911144556, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4532459774289852804, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
@@ -1505,6 +1547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flower Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470505300440393221, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio_soundtrack
       objectReference: {fileID: 0}
     - target: {fileID: 6477985213402229669, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
@@ -2018,10 +2065,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 82149280}
   knob_number: 0
   value: 0
   Text: {fileID: 1963578757}
+--- !u!1 &542366848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7467789865697370931, guid: 35edf594377f43f4bb5829fbd0e44ef6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809042520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &542366849
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542366848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &542610711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,6 +2936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 542610711}
   knob_number: 0
   value: 0
@@ -3108,6 +3178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 1519004326}
   knob_number: 0
   value: 0
@@ -3697,6 +3769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 1597968199}
   knob_number: 0
   value: 0
@@ -3749,6 +3823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 505630321}
   knob_number: 0
   value: 0
@@ -4322,10 +4398,130 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 1582314621}
   knob_number: 0
   value: 0
   Text: {fileID: 809271190}
+--- !u!1 &1458934510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5470505300440393221, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+    type: 3}
+  m_PrefabInstance: {fileID: 442751735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1458934514
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458934510}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!82 &1458934515
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458934510}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1519004326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,6 +4875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 148398061}
   knob_number: 0
   value: 0
@@ -4843,6 +5041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player PC
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467789865697370931, guid: 35edf594377f43f4bb5829fbd0e44ef6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35edf594377f43f4bb5829fbd0e44ef6, type: 3}
@@ -5249,6 +5452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 280881125}
   knob_number: 0
   value: 0
@@ -5301,6 +5506,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
   knob: {fileID: 876304177}
   knob_number: 0
   value: 0
