@@ -87,7 +87,30 @@ public class Map : MonoBehaviour
     
     public void LightTile(int x, int y, DIRECTION color)
     {
-        tiles[x, y].SetMaterial(color);
+        if(x>=0 && y>=0 && x< size && y< size)
+        {
+            tiles[x, y].SetMaterial(color);
+        }
+        else
+        {
+            if (x < 0)
+            {
+                tiles[x+1, y].SetMaterial(color);
+            }
+            else if (x >= size)
+            {
+                tiles[x-1, y].SetMaterial(color);
+            }
+            else if(y<0)
+            {
+                tiles[x, y+1].SetMaterial(color);
+            }
+            else
+            {
+                tiles[x, y-1].SetMaterial(color);
+            }
+        }
+        
     }
 
     public int GetSize()
@@ -97,12 +120,27 @@ public class Map : MonoBehaviour
 
     public int GetTileVal(Vector2 xy)
     {
-        return GetTileVal((int)xy.x, (int)xy.y);
+        if (xy.x >= 0 && xy.y >= 0)
+        {
+            return GetTileVal((int)xy.x, (int)xy.y);
+        }
+        else
+        {
+            return -1;
+        }
     }
 
     public bool TileLighted(Vector2 xy)
     {
-        return TileLighted((int)xy.x, (int)xy.y);
+        if (xy.x < 0 || xy.y < 0 || xy.x >= size || xy.y >= size)
+        {
+            return false; //not exisitng
+        }
+        else
+        {
+            return TileLighted((int)xy.x, (int)xy.y);
+        }
+        
     }
 
     public bool TileLighted(int x, int y)
