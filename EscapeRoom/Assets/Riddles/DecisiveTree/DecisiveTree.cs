@@ -12,8 +12,8 @@ public class DecisiveTree : Riddle
 
     Vector2 pos;
 
-    private int x=15, y=15, z=15;
-    private int simX=15, simY=15, simZ=15;
+    private int x=20, y= 20, z= 20;
+    private int simX= 20, simY= 20, simZ= 20;
 
 
     protected bool simulating = false;        
@@ -89,7 +89,7 @@ public class DecisiveTree : Riddle
                 if (pos.x == 9 && pos.y == 9)
                 {
                     break;
-                }                
+                }         
             }
 
             yield return null; 
@@ -99,6 +99,7 @@ public class DecisiveTree : Riddle
         {
             Debug.Log("DECISIVE TREE SOLVED");
             //riddle solved!
+            this.OnSolve();
         }        
         simulating = false;
 
@@ -173,6 +174,13 @@ public class DecisiveTree : Riddle
         }
     }
 
+    /// <summary>
+    /// ideal answer:
+    /// x=18
+    /// y=21
+    /// z=22
+    /// </summary>
+    /// <returns></returns>
     public override float GetSolvePercentage()
     {
         

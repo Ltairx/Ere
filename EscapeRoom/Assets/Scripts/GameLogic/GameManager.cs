@@ -11,6 +11,11 @@ namespace GameManager
         List<Room> room = new List<Room>();
 
 
+        /// <summary>
+        /// returns value betwwen 0 and 1
+        /// </summary>
+        /// <param name="degree"></param>
+        /// <returns></returns>
         public float CalcDegreeKnowledge(Degree degree)
         {
             float knowledge = room.Select(x => x[degree].GetSolvePercentage()).Sum();
@@ -21,6 +26,7 @@ namespace GameManager
 
         /// <summary>
         /// Called by the clock to finish the game, and summ up the score.
+        /// 
         /// </summary>
         public void EndGame()
         {
