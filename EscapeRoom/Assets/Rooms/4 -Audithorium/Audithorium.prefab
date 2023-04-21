@@ -109,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 0}
   funcIndex: 0
-  mainObject: {fileID: 0}
+  mainObject: {fileID: 1418158719891291305}
   secondaryObject: {fileID: 0}
 --- !u!1 &9102191386213397122
 GameObject:
@@ -221,7 +221,7 @@ MonoBehaviour:
   riddle: {fileID: 0}
   funcIndex: 0
   mainObject: {fileID: 0}
-  secondaryObject: {fileID: 0}
+  secondaryObject: {fileID: 1418158719891291305}
 --- !u!1001 &104345926283059180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1846,6 +1846,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audithorium
       objectReference: {fileID: 0}
+    - target: {fileID: 7246180326300695816, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a332ebd6a864875448cb8b9f002a4df5, type: 2}
+    - target: {fileID: 7246180326300695816, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6b02bdfbcdb5a8a41b0eb152c779b6e1, type: 2}
+    - target: {fileID: 7246180326300695816, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: d3d9e5ff14825d943b706a6ac4e6dd89, type: 2}
     - target: {fileID: 9129997795564643249, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
         type: 3}
       propertyPath: m_RootOrder
@@ -2118,7 +2133,12 @@ PrefabInstance:
     - target: {fileID: 7332052595716427631, guid: b89fd7facd1f73146842d02e39ede85e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.62
+      value: 8.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332052595716427631, guid: b89fd7facd1f73146842d02e39ede85e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.65
       objectReference: {fileID: 0}
     - target: {fileID: 8332342630876779205, guid: b89fd7facd1f73146842d02e39ede85e,
         type: 3}
@@ -2152,6 +2172,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b89fd7facd1f73146842d02e39ede85e, type: 3}
+--- !u!1 &1418158719891291305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8332342630876779207, guid: b89fd7facd1f73146842d02e39ede85e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6920944859867983470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7531005281193221702
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 1428641523}
   m_Layer: 0
   m_Name: Player VR
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -406,6 +406,16 @@ PrefabInstance:
         type: 3}
       propertyPath: config.walking.characterControllerWalkingType.walkSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 136579907531431566, guid: 4e989319e1a6746439e05903ce1e807d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143830891166382024, guid: 4e989319e1a6746439e05903ce1e807d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e989319e1a6746439e05903ce1e807d, type: 3}
