@@ -407,6 +407,16 @@ PrefabInstance:
       propertyPath: config.walking.characterControllerWalkingType.walkSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 136579907531431566, guid: 4e989319e1a6746439e05903ce1e807d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143830891166382024, guid: 4e989319e1a6746439e05903ce1e807d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e989319e1a6746439e05903ce1e807d, type: 3}
 --- !u!4 &4482788215525302661 stripped
