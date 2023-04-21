@@ -179,14 +179,22 @@ public class DecisiveTree : Riddle
     /// x=18
     /// y=21
     /// z=22
+    /// 
+    /// result accordingly to the distance to the destination point
     /// </summary>
     /// <returns></returns>
     public override float GetSolvePercentage()
     {
-        
-
-
-        return 0f;
+        float distance = Math.Max(map.GetSize() - 1 - pos.x, map.GetSize() - 1 - pos.y);
+        float maxDistance = 5f;
+        if (distance <= 5f)
+        {
+            return 1 - distance / maxDistance;
+        }
+        else
+        {
+            return 0;
+        }                
     }
 
 }
