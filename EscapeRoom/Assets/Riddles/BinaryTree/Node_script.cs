@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Node_script : Riddle
 {
-    public AudioSource src1;
-    public AudioClip sfx_1;
+   // public AudioSource src1;
+   // public AudioClip sfx_1;
     public GameObject knob;
     public int knob_number = 0;
     public int value = 0;
@@ -36,8 +36,8 @@ public class Node_script : Riddle
 
     void Turn_galka(float kupa)
     {
-        src1.clip = sfx_1;
-        src1.Play();
+     //   src1.clip = sfx_1;
+     //   src1.Play();
         knob.transform.Rotate(new Vector3(0, 90, 0));
         //Debug.Log("Krece sie");
         FindObjectOfType<Binary_tree_game>().Update_Value(knob_number);
