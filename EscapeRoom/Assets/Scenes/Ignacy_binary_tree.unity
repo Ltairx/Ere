@@ -430,8 +430,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 186100292}
   knob_number: 0
   value: 0
@@ -545,6 +543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 524198568}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &94770611
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +994,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 75822558}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &280881125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1105,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 2008833374}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &326404333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,12 +1506,22 @@ PrefabInstance:
         type: 3}
       propertyPath: src1
       value: 
-      objectReference: {fileID: 1458934515}
+      objectReference: {fileID: 0}
     - target: {fileID: 1160739303131233095, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: sfx_1
       value: 
       objectReference: {fileID: 8300000, guid: acb41e5a558a4e84ea7d2236002559b3, type: 3}
+    - target: {fileID: 1271560880610106715, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: src1
+      value: 
+      objectReference: {fileID: 1893191086}
+    - target: {fileID: 1271560880610106715, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: sfx_1
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ce8c42d21b36e145b4d94597dc2eea3, type: 3}
     - target: {fileID: 2862672613458845970, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1568,6 +1582,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ca309c5926d65b34ab5267404b8debd8, type: 2}
+    - target: {fileID: 7816032463726221888, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: eeef1e7b9cad56a49b428cbbe284e619, type: 2}
     - target: {fileID: 7950504001021896476, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -2017,6 +2036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 919168327}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &524198566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,8 +2086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 82149280}
   knob_number: 0
   value: 0
@@ -2199,6 +2218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 711061283}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &548770115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,8 +2957,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 542610711}
   knob_number: 0
   value: 0
@@ -3178,8 +3197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 1519004326}
   knob_number: 0
   value: 0
@@ -3721,6 +3738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 2124491990}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &905346740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3769,8 +3788,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 1597968199}
   knob_number: 0
   value: 0
@@ -3823,8 +3840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 505630321}
   knob_number: 0
   value: 0
@@ -4398,130 +4413,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 1582314621}
   knob_number: 0
   value: 0
   Text: {fileID: 809271190}
---- !u!1 &1458934510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5470505300440393221, guid: 47ef127bb4fcb8b42bae506deb6e7248,
-    type: 3}
-  m_PrefabInstance: {fileID: 442751735}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1458934514
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458934510}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!82 &1458934515
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458934510}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1519004326
 GameObject:
   m_ObjectHideFlags: 0
@@ -4631,6 +4526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 791965633}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &1582314621
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,6 +4637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 1446318144}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &1597968199
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,6 +4748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 905346742}
   funcIndex: 0
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &1604400631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2496212773812121062, guid: 29b093cfc907f9b4c931b27076ea615a,
@@ -4875,8 +4776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 148398061}
   knob_number: 0
   value: 0
@@ -5237,6 +5136,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858425136}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1893191086 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 729744737529936522, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+    type: 3}
+  m_PrefabInstance: {fileID: 442751735}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1963578755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5452,8 +5357,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 280881125}
   knob_number: 0
   value: 0
@@ -5506,8 +5409,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
-  src1: {fileID: 0}
-  sfx_1: {fileID: 0}
   knob: {fileID: 876304177}
   knob_number: 0
   value: 0

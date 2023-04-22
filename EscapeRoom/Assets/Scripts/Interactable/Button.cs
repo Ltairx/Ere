@@ -11,7 +11,12 @@ public class Button<T> : Interactable<T>
     protected override void OnStartInteract(Hand hand)
     {
         InteractTarget();
-        src1.clip = sfx_1;
-        src1.Play();
+        if (src1!=null && sfx_1 != null)
+        {
+            src1.clip = sfx_1;
+            src1.Play();
+        }
     }
+        
+        
 }
