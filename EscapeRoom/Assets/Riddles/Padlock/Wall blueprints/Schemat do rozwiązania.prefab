@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 0}
-  degree: 0
+  degree: 1
   s_3: {fileID: 0}
   s_2: {fileID: 0}
   s_1: {fileID: 0}

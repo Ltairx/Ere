@@ -10,10 +10,12 @@ public class Binary_tree_game : Riddle
     public int[] ending_array = new int[10];
     public int[] node_value_array = new int[10];
     public GameObject[] Nodes = new GameObject[10];
-    private 
+   
     // Start is called before the first frame update
-    void Start()
+    override protected void Start()
     {
+        base.Start();
+
         int[] tab = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         int randomNumber;
         int next;

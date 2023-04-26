@@ -15,11 +15,6 @@ public class TransmitationController : Riddle
     public TMP_Text bt3;
     public TMP_Text bt4;
     private int a = 5, b = 1, c = 1, d = 1; //rozwiazanie - 5 1 2 4/5 2 1 4
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
