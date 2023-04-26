@@ -10,7 +10,8 @@ public class Binary_tree_game : Riddle
     public int[] ending_array = new int[10];
     public int[] node_value_array = new int[10];
     public GameObject[] Nodes = new GameObject[10];
-   
+    bool solved = false;
+
     // Start is called before the first frame update
     override protected void Start()
     {
@@ -63,6 +64,20 @@ public class Binary_tree_game : Riddle
         }
     }
 
+    public int solved_percent()
+    {
+        int percent = 0;
+        for(int i = 0; i < 10; i++)
+        {
+            if (ending_array[i] == node_value_array[i])
+            {
+                percent += 10;
+            }
+        }
+
+
+        return percent;
+    }
     public bool check()
     {
         for(int i = 0; i < 10; i++)
@@ -81,7 +96,9 @@ public class Binary_tree_game : Riddle
         if(check() == true)
         {
             Debug.Log("DZIA£A!!!!!!!!!!!!!");
+            solved = true;
         }
+        //Debug.Log("Procenty" + solved_percent());
     }
 
     public void Update_Value(int number)

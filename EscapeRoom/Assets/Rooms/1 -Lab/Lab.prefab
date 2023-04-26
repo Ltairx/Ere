@@ -6462,6 +6462,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5736515526324049455}
     m_Modifications:
+    - target: {fileID: 77447719, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 286759551, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 510261685, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 671167230, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 816206718, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 1431453877, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
+    - target: {fileID: 1509522939, guid: 793781d4fc161ed48b36725a23293f7e, type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 4456393447881853974}
     - target: {fileID: 1066737798083215139, guid: 793781d4fc161ed48b36725a23293f7e,
         type: 3}
       propertyPath: m_LocalPosition.z
