@@ -7,6 +7,7 @@ public class Play_Soundtrack : MonoBehaviour
     public AudioSource src1;
     public AudioClip sfx_1;
     bool in_room;
+    public float volume_level;
     
     // Start is called before the first frame update
     private void Start()
@@ -33,14 +34,45 @@ public class Play_Soundtrack : MonoBehaviour
         }
     }
     private void Update()
-    {
-        if(in_room == true && src1.volume < 1)
+    {   if (volume_level != null)
         {
-            src1.volume += 0.01f;
+            if (in_room == true && src1.volume < volume_level)
+            {
+                if(volume_level == 1)
+                {
+                    src1.volume += 0.01f;
+                }
+                else
+                {
+                    src1.volume += 0.001f;
+                }
+                
+            }
+            if (in_room == false && src1.volume > 0)
+            {
+                
+                if (volume_level == 1)
+                {
+                    src1.volume -= 0.01f;
+                }
+                else
+                {
+                    src1.volume -= 0.001f;
+                }
+            }
         }
-        if (in_room == false && src1.volume > 0)
+        else
         {
-            src1.volume -= 0.01f;
+            if (in_room == true && src1.volume < 1)
+            {
+                src1.volume += 0.001f;
+            }
+            if (in_room == false && src1.volume > 0)
+            {
+                src1.volume -= 0.001f;
+            }
         }
+        
+        
     }
 }

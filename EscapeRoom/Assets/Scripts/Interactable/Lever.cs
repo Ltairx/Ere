@@ -11,6 +11,8 @@ public class Lever : Interactable<bool>
     public float rotatingTime = 1f;
     private bool On = false;
     private bool rotating = false;
+    public AudioSource src1;
+    public AudioClip sfx_1;
 
     override protected void OnStartInteract(Hand hand)
     {
@@ -29,6 +31,11 @@ public class Lever : Interactable<bool>
                 StartCoroutine(RotateLever(rotationAngle));
             }
 
+            if (src1 != null && sfx_1 != null)
+            {
+                src1.clip = sfx_1;
+                src1.Play();
+            }
             InteractTarget(); //czy mo¿e daæ to na koñcu korutyny, by dopiero po przejœciu dawa³o impuls?
         }
     }
