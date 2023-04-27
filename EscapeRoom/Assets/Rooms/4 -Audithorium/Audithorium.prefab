@@ -1159,6 +1159,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Objects
       objectReference: {fileID: 0}
+    - target: {fileID: 8263901617179401865, guid: 7e7044b0d0750a146b5c0f88aa59e544,
+        type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 5814040871983718168}
+    - target: {fileID: 8263901617179401866, guid: 7e7044b0d0750a146b5c0f88aa59e544,
+        type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 5814040871983718168}
     - target: {fileID: 8263901617561713871, guid: 7e7044b0d0750a146b5c0f88aa59e544,
         type: 3}
       propertyPath: m_IsActive
