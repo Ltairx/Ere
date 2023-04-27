@@ -4,11 +4,19 @@ using UnityEngine;
 using TMPro;
 using System;
 using System.Linq;
-using System.Net;
 
 public class RobotCommunicator : Riddle
 {
-    // Start is called before the first frame update
+    //private bool stop = false;
+    private bool done = true;
+    private bool riddle_done = false;
+    private bool[] riddle_percentage = {false, false, false, false, false, false}; 
+
+    private int rotation_value = 0;
+    private int height_value = 0;
+    private int fingers_state = 0;
+    private int iterator = 0;
+
     public GameObject Base;
     public GameObject Arm1;
     public GameObject Arm2;
@@ -25,19 +33,15 @@ public class RobotCommunicator : Riddle
     private Quaternion startArm1;
     private Quaternion startArm2;
     private Quaternion startWrist;
+    private Vector3 startFinger1;
+    private Vector3 startFinger2;
 
-    private int rotation_value = 0;
-    private int height_value = 0;
-    private int fingers_state = 0;
+    private List<(Operations, Instructions instruction)> queue = new List<(Operations, Instructions instruction)>();
 
-    private List<(operations, Instructions instruction)> queue = new List<(operations, Instructions instruction)>();
-    private int iterator = 0;
+    private static CubeDetector cubeDetector;
 
-    //private bool stop = false;
-    private bool done = true;
-    private bool open = true;
-
-    private enum operations {height, rotation, fingers}
+    private enum Operations {height, rotation, fingers};
+    private enum Percentage {solved, solved_under, start, all_commands, grabbed, moved};
 
     protected override void Start()
     {
@@ -52,123 +56,109 @@ public class RobotCommunicator : Riddle
         startArm1 = Arm1.transform.localRotation;
         startArm2 = Arm2.transform.localRotation;
         startWrist = Wrist.transform.localRotation;
+        startFinger1 = Finger1.transform.localPosition;
+        startFinger2 = Finger2.transform.localPosition;
+        cubeDetector = Base.AddComponent<CubeDetector>();
     }
-
 
     // Update is called once per frame
     void Update()   
     {
-        //height_text.text = open.ToString();
-        //rotation_text.text = iterator.ToString(); do debugowania
     }
     public override Delegate GetFunction(int index)
     {
         switch (index)
         {
             case 0: //wpisanie komendy height
-                return (Action<float>)height_command;
+                return (Action<float>)HeightCommand;
             case 1: //wpisanie komendy rotation
-                return (Action<float>)rotation_command;
+                return (Action<float>)RotationCommand;
             case 2: //wpisanie komendy finger
-                return (Action<float>)fingers_command;
+                return (Action<float>)FingersCommand;
             case 3: //start
-                return (Action<float>)start_command;
+                return (Action<float>)StartCommand;
             //case 4: //stop
-            //    return (Action<float>)stop_command;
+                    //return (Action<float>)stop_command;
             case 5: //reset
-                return (Action<float>)reset_command;
+                return (Action<float>)ResetCommand;
             case 6: //delline
-                return (Action<float>)delline_command;
+                return (Action<float>)DelLineCommand;
             case 7: //incr_hei
-                return (Action<float>)increase_height;  
+                return (Action<float>)IncreaseHeight;  
             case 8: //incr_rot
-                return (Action<float>)increase_rot;
+                return (Action<float>)IncreaseRot;
             case 9: //change_state
-                return (Action<float>)change_fstate;
+                return (Action<float>)ChangeFState;
             case 10: //decr_hei
-                return (Action<float>)decrease_height;
+                return (Action<float>)DecreaseHeight;
             case 11: //decr_rot
-                return (Action<float>)decrease_rot;
+                return (Action<float>)DecreaseRot;
             default:
                 return null;
         }
     }
-    void height_command(float not_used)
+    private void HeightCommand(float not_used)
     {
-        Debug.Log("wchodzi");
         if (done)
         { 
             if (iterator < 12)
             {
                 Height height = commands_text[iterator].gameObject.AddComponent<Height>();
-                height.setval(height_value);
-                queue.Add((operations.height, height));
+                height.SetVal(height_value);
+                queue.Add((Operations.height, height));
                 commands_text[iterator].text = "change height_value " + height_value.ToString();
             }
             else iterator = 11;
             iterator++;
         }
     }
-    void rotation_command(float not_used)
+    private void RotationCommand(float not_used)
     {
         if (done)
         {
             if (iterator < 12)
             {
                 Rotation rotation = commands_text[iterator].gameObject.AddComponent<Rotation>();
-                rotation.setval(rotation_value);
-                queue.Add((operations.rotation, rotation));
+                rotation.SetVal(rotation_value);
+                queue.Add((Operations.rotation, rotation));
                 commands_text[iterator].text = "change rotation_value " + rotation_value.ToString();
             }
             else iterator = 11;
             iterator++;
         }
     }
-    void fingers_command(float not_used)
+    private void FingersCommand(float not_used)
     {
         if (done)
         {
-            if(open && fingers_state == 0)
+            if (iterator < 12)
             {
-                if (iterator < 12)
-                {
-                    Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
-                    fingers.setval(fingers_state);
-                    queue.Add((operations.fingers, fingers));
-                    commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
-                    open = false;
-                }
-                else iterator = 11;
-                iterator++;
+                Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
+                fingers.SetVal(fingers_state);
+                queue.Add((Operations.fingers, fingers));
+                commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
             }
-            else if(!open && fingers_state == 1)
-            {
-                if (iterator < 12)
-                {
-                    Fingers fingers = commands_text[iterator].gameObject.AddComponent<Fingers>();
-                    fingers.setval(fingers_state);
-                    queue.Add((operations.fingers, fingers));
-                    commands_text[iterator].text = "change finger_state " + fingers_state.ToString();
-                    open = true;
-                }
-                else iterator = 11;
-                iterator++;
-            }
+            else iterator = 11;
+            iterator++;
         }
     }
-    void  start_command(float not_used) 
+    private void StartCommand(float not_used) 
     {
+        if(queue.Count > 0)
+        {
+            riddle_percentage[(int)Percentage.start] = true;// dodać jeszcze wykrywanie 3 komend
+        }
         if (done)
         {
             done = false;
-            StartCoroutine(Queue_exe());
+            StartCoroutine(Queue_Exe());
         }
     }
     //void stop_command(float not_used)
     //{
     //    stop = true;
     //}
-    void reset_command(float not_used)
+    private void ResetCommand(float not_used)
     {
         if (done)
         {
@@ -180,36 +170,44 @@ public class RobotCommunicator : Riddle
                 commands_text[i].text = "";
             }
             queue.Clear();
-            open = true;
             iterator = 0;
+            ResetPos();
         }
     }
-    void delline_command(float not_used)
+    private void DelLineCommand(float not_used)
     {
         if (done)
         {
             //stop_command(not_used);
             iterator--;
             if (iterator < 0) iterator = 0;
-            Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
-            commands_text[iterator].text = "";
             if (queue.Count > 0)
             {
                 queue.RemoveAt(queue.Count - 1);
-                open = !open;
             }
+            Destroy(commands_text[iterator].gameObject.GetComponent<Instructions>());
+            commands_text[iterator].text = "";
         }
     }
-    void increase_height(float not_used) 
+    private void IncreaseHeight(float not_used)
+    {
+        height_value -= 10;
+        if (height_value < -40)
+        {
+            height_value = 40;
+        }
+        height_text.text = (-height_value).ToString() + "cm";
+    }
+    private void DecreaseHeight(float not_used) 
     {
         height_value += 10;
         if(height_value > 40)
         {
             height_value = -40;
-        }
-        height_text.text = height_value.ToString() + "cm";
+        }   
+        height_text.text = (-height_value).ToString() + "cm";
     }
-    void increase_rot(float not_used)
+    private void IncreaseRot(float not_used)
     {
         rotation_value += 10;
         if (rotation_value > 180)
@@ -218,7 +216,16 @@ public class RobotCommunicator : Riddle
         }
         rotation_text.text = rotation_value.ToString() + "°";
     }
-    void change_fstate(float not_used)
+    private void DecreaseRot(float not_used)
+    {
+        rotation_value -= 10;
+        if (rotation_value < -180)
+        {
+            rotation_value = 180;
+        }
+        rotation_text.text = rotation_value.ToString() + "°";
+    }
+    private void ChangeFState(float not_used)
     {
         if (fingers_state == 0)
         {
@@ -231,50 +238,62 @@ public class RobotCommunicator : Riddle
             fingers_text.text = "ZŁAP";
         }
     }
-    void decrease_height(float not_used)
-    {
-        height_value -= 10;
-        if (height_value < -40)
-        {
-            height_value = 40;
-        }
-        height_text.text = height_value.ToString() + "cm";
-    }
-    void decrease_rot(float not_used)
-    {
-        rotation_value -= 10;
-        if (rotation_value < -180)
-        {
-            rotation_value = 180;
-        }
-        rotation_text.text = rotation_value.ToString() + "°";
-    }
-    IEnumerator Queue_exe()
+    private IEnumerator Queue_Exe()
     {
         //stop = false;
-        foreach ((operations o, Instructions instruction) com in queue)
+        foreach ((Operations o, Instructions instruction) com in queue)
         {
             //if(stop) break;
             com.instruction.Run();
             while (!com.instruction.Finished())
             {
+                if (Grabber.check_child) riddle_percentage[(int)Percentage.grabbed] = true;
                 yield return null;
             }
         }
-        StartCoroutine(Reverse_queue());
+        riddle_done = cubeDetector.CheckPosition();
+        if (!riddle_done)
+        {
+            StartCoroutine(Reverse_Queue());
+        }
+        else
+        {
+            riddle_percentage[(int)Percentage.solved] = true;
+            if (queue.Count < 8) riddle_percentage[(int)Percentage.solved_under] = true;
+            OnSolve();
+        }
         //done = true;
     }    
-    IEnumerator Reverse_queue()
+    private IEnumerator Reverse_Queue()
     {
-        foreach ((operations o, Instructions instruction) com in queue.Reverse<(operations, Instructions)>())
+        foreach ((Operations o, Instructions instruction) com in queue.Reverse<(Operations, Instructions)>())
         {
             //if(stop) break;
-            com.instruction.Reverse_run();
+            com.instruction.ReverseRun();
             while (!com.instruction.Finished())
             {
                 yield return null;
             }
         }
         done = true;
+    }
+    private void ResetPos()
+    {
+        Base.transform.localRotation = startBase;
+        Arm1.transform.localRotation = startArm1;
+        Arm2.transform.localRotation = startArm2;
+        Wrist.transform.localRotation = startWrist;
+        Finger1.transform.localPosition = startFinger1;
+        Finger2.transform.localPosition = startFinger2;
+    }
+    private float PercentageCalculator()
+    {
+        float total = 0;
+        if(riddle_percentage[(int)Percentage.solved]) total += 50;
+        for (int i = 1; i < riddle_percentage.Length; i++)
+        {
+            if (riddle_percentage[i]) total += 10;
+        }
+        return total;
     }
 }

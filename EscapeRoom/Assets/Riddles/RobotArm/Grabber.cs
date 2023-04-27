@@ -5,7 +5,8 @@ using UnityEngine;
 public class Grabber : MonoBehaviour
 {
     public static bool grabbed = false;
-    GameObject child = null;
+    public static bool check_child = false;
+    private GameObject child = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,8 @@ public class Grabber : MonoBehaviour
                 child = null;
             }
         }
+        if(child != null) check_child= true;
+        else check_child = false;
     }
     private void OnTriggerStay(Collider other)
     {

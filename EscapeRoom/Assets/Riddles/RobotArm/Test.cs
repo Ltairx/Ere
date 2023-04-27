@@ -13,9 +13,6 @@ public class Test : Riddle
     public GameObject Finger1;
     public GameObject Finger2;
     // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
@@ -27,13 +24,13 @@ public class Test : Riddle
         switch (index)
         {
             case 9: //wpisanie komendy height
-                return (Action<float>)function;
+                return (Action<float>)Function;
             default:
                 return null;
         }
     }
 
-    void function(float not_used)
+    void Function(float not_used)
     {
         StartCoroutine(Coroute());
     }

@@ -8,56 +8,72 @@ public class Fingers : Instructions
     Vector3 endRot;
     Vector3 startRot2;
     Vector3 endRot2;
-    private float value = 0.00085f;
+    private const float c_value = 0.00085f;
+    private float value = c_value;
+    private static bool open = true;
 
     private void Start()
     {
         //duration = 1f;
         if(this.val == 0)
         {
-            value = Mathf.Abs(value);
+            value = c_value;
         }
         else
         {
-            value = -1* Mathf.Abs(value);
+            value = -c_value;
         }
     }
 
-    protected override void busy(float perc)
+    protected override void Busy(float perc)
     {
         Finger1.transform.localPosition = Vector3.Lerp(startRot, endRot, perc);
         Finger2.transform.localPosition = Vector3.Lerp(startRot2, endRot2, perc);
     }
     public override void Run()
-    {   
-        if(this.val == 0) 
+    {
+        if (this.val == 0 && open)
         {
             Grabber.grabbed = true;
+            open = false;
         }
-        else
+        else if (this.val == 1 && !open)
         {
-            Grabber.grabbed = false;
+            if (!Grabber.check_child)
+            {
+                Grabber.grabbed = false;
+                open = true;
+            }
+            else if (trans_value == 40)
+            {
+                Grabber.grabbed = false;
+                open = true;
+            }
+            else value = 0;
         }
+        else value = 0;
         startRot = Finger1.transform.localPosition;
         endRot = startRot + new Vector3(value, 0, 0); //transposition of finger1
         startRot2 = Finger2.transform.localPosition;
         endRot2 = startRot2 + new Vector3(-value, 0, 0); //transposition of finger2
         base.Run();
     }
-    protected override void reverse_busy(float perc)// tu w ogóle nie wchodzi program
+    protected override void ReverseBusy(float perc)
     {
         Finger1.transform.localPosition = Vector3.Lerp(startRot, endRot, perc);
         Finger2.transform.localPosition = Vector3.Lerp(startRot2, endRot2, perc);
     }
-    public override void Reverse_run()
+    public override void ReverseRun()
     {
-        if (this.val == 0)
+        if (value == c_value)
         {
             Grabber.grabbed = false;
+            open = true;
         }
-        else
+        else if (value == -c_value)
         {
             Grabber.grabbed = true;
+            open = false;
         }
         startRot = Finger1.transform.localPosition;
         endRot = startRot + new Vector3(-value, 0, 0); //transposition of finger1

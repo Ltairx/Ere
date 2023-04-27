@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class Instructions: MonoBehaviour
@@ -11,15 +9,16 @@ public class Instructions: MonoBehaviour
     public static GameObject Finger1;
     public static GameObject Finger2;
     public static GameObject Wrist;
+    protected static float trans_value = 0;
     protected float val;
-    protected bool finished;
     protected float duration = 1.0f;
+    protected bool finished;
 
-    public void setval(float val)
+    public void SetVal(float val)
     {
         this.val = val;
     }
-    protected IEnumerator command()
+    protected IEnumerator Command()
     {
         finished = false;
         float startTime = Time.time;
@@ -27,13 +26,13 @@ public class Instructions: MonoBehaviour
         while (Time.time < startTime + duration)
         {
             percentage = (Time.time - startTime) / duration;
-            busy(percentage);
+            Busy(percentage);
             yield return null;
         }
-        busy(1f);
+        Busy(1f);
         finished = true;
     }
-    protected IEnumerator reverse_command()
+    protected IEnumerator Reverse_Command()
     {
         finished = false;
         float startTime = Time.time;
@@ -41,24 +40,24 @@ public class Instructions: MonoBehaviour
         while (Time.time < startTime + duration)
         {
             percentage = (Time.time - startTime) / duration;
-            reverse_busy(percentage);
+            ReverseBusy(percentage);
             yield return null;
         }
-        reverse_busy(1f);
+        ReverseBusy(1f);
         finished = true;
     }
     public virtual void Run()
     {
-        StartCoroutine(command());
+        StartCoroutine(Command());
     }
-    public virtual void Reverse_run()
+    public virtual void ReverseRun()
     {
-        StartCoroutine(reverse_command());
+        StartCoroutine(Reverse_Command());
     }
     public bool Finished()
     {
         return finished;
     }
-    protected virtual void busy(float perc){}
-    protected virtual void reverse_busy(float perc){}
+    protected virtual void Busy(float perc){}
+    protected virtual void ReverseBusy(float perc){}
 }
