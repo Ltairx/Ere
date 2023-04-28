@@ -2008,6 +2008,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dca6d63e4567b7408b3dfccff29b0ab, type: 3}
+--- !u!114 &5814040871983718168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 932312054693656968, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 6656218551741146768}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10741ac156f694a48b39184e41c52ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2516358937136039201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9129997795564643249, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
@@ -2225,6 +2237,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 6.62
       objectReference: {fileID: 0}
+    - target: {fileID: 7461684636210888628, guid: b89fd7facd1f73146842d02e39ede85e,
+        type: 3}
+      propertyPath: room
+      value: 
+      objectReference: {fileID: 5814040871983718168}
     - target: {fileID: 8332342630876779205, guid: b89fd7facd1f73146842d02e39ede85e,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2249,6 +2266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8332342630876779206, guid: b89fd7facd1f73146842d02e39ede85e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8332342630876779207, guid: b89fd7facd1f73146842d02e39ede85e,
         type: 3}
