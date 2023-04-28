@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -602,12 +602,52 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 6b02bdfbcdb5a8a41b0eb152c779b6e1, type: 2}
+    - target: {fileID: 2349842326842365729, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 2578653734728016139, guid: 4227a9ee28e56a04cabbb503dc96f546,
         type: 3}
       propertyPath: m_Name
       value: EscapeRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 4147544299729586843, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4339352341055812246, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042596192355574376, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042596192355574376, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042596192355574376, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042596192355574376, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6042596192355574376, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102881932526958902, guid: 4227a9ee28e56a04cabbb503dc96f546,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0

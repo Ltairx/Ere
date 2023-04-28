@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameManager
 {
@@ -12,6 +13,8 @@ namespace GameManager
         public GameObject trophe;
         List<Room> room = new List<Room>();
 
+
+        [SerializeField] Image darkener;
 
         /// <summary>
         /// returns value betwwen 0 and 1
@@ -48,23 +51,32 @@ namespace GameManager
             
             while (Time.time < startTime + darkTime)
             {
-                lerpVal = Mathf.Lerp(1, 0, (Time.time - startTime) / darkTime);
-                //TODO darken light source; here
+                lerpVal = Mathf.Lerp(0, 1, (Time.time - startTime) / darkTime);
+                darkener.color = new Color(0,0,0,lerpVal);
                 yield return null;
             }
 
 
             //move the player to the gameManager. As simple as that XD
             player.transform.position = transform.position;
-            trophe.SetActive(false);
+            player.transform.rotation = transform.rotation;
+
+            if (trophe != null)
+            {
+                trophe.SetActive(false);
+            }
+            else
+            {
+                Debug.LogError("MISSING TROPHE REFERENCE - GameManager");
+            }
 
 
 
             startTime = Time.time;
             while (Time.time < startTime + darkTime)
             {
-                lerpVal = Mathf.Lerp(0, 1, (Time.time - startTime) / darkTime);
-                //TODO darken light source; here
+                lerpVal = Mathf.Lerp(1, 0, (Time.time - startTime) / darkTime);
+                darkener.color = new Color(0, 0, 0, lerpVal);
                 yield return null;
             }
         }
