@@ -14,25 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
---- !u!114 &850149095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6574776720203073356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 2934891803639612792}
-  funcIndex: 0
-  leverObject: {fileID: 1551365511590160104}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
+  solution:
+  - {fileID: 8872472281351828010}
+  - {fileID: 8929542672135725173}
+  - {fileID: 3103670958457813932}
+  - {fileID: 8225957889075941198}
+  - {fileID: 5509798388345143101}
+  - {fileID: 8876497819621491525}
+  - {fileID: 7545329239547921607}
+  output:
+  - {fileID: 332579080207335168}
+  - {fileID: 5311360478881806645}
+  - {fileID: 7376996116323842880}
+  - {fileID: 5840466953270484699}
+  - {fileID: 8528050000576569919}
+  - {fileID: 4828726069548852876}
+  - {fileID: 847757400304335674}
 --- !u!82 &5695408901369103405
 AudioSource:
   m_ObjectHideFlags: 0
@@ -129,6 +126,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &850149095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574776720203073356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 2934891803639612792}
+  funcIndex: 0
+  leverObject: {fileID: 1551365511590160104}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &1052375955387723960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -155,25 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 850149095}
---- !u!114 &1697482754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6213239903942976224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 2020186227965389655}
-  funcIndex: 0
-  leverObject: {fileID: 833248693121467489}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &7333878001727063698
 AudioSource:
   m_ObjectHideFlags: 0
@@ -270,6 +267,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1697482754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213239903942976224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 2020186227965389655}
+  funcIndex: 0
+  leverObject: {fileID: 833248693121467489}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &1057492380232874435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -296,25 +312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1697482754}
---- !u!114 &797220281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6796138961920508902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 711439732872400806}
-  funcIndex: 0
-  leverObject: {fileID: 5791737525017591701}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &48403376278216649
 AudioSource:
   m_ObjectHideFlags: 0
@@ -411,6 +408,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &797220281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796138961920508902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 711439732872400806}
+  funcIndex: 0
+  leverObject: {fileID: 5791737525017591701}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &2389322661698416726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -437,25 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 797220281}
---- !u!114 &1207254459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4958286452199319874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 8741854957821322591}
-  funcIndex: 0
-  leverObject: {fileID: 4345576038927208571}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &2034741557233108329
 AudioSource:
   m_ObjectHideFlags: 0
@@ -552,6 +549,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1207254459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958286452199319874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 8741854957821322591}
+  funcIndex: 0
+  leverObject: {fileID: 4345576038927208571}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &5848884696023087651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -578,25 +594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1207254459}
---- !u!114 &964788546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8217119957965365584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 1329839201452012254}
-  funcIndex: 0
-  leverObject: {fileID: 3717927753862043732}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &3412262839017703564
 AudioSource:
   m_ObjectHideFlags: 0
@@ -693,6 +690,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &964788546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8217119957965365584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 1329839201452012254}
+  funcIndex: 0
+  leverObject: {fileID: 3717927753862043732}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &847733666279031273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -719,25 +735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 964788546}
---- !u!114 &473250728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4075746030468752953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 1328145953020713550}
-  funcIndex: 0
-  leverObject: {fileID: 5205965609413697902}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &7348159702761392138
 AudioSource:
   m_ObjectHideFlags: 0
@@ -834,6 +831,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &473250728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075746030468752953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 1328145953020713550}
+  funcIndex: 0
+  leverObject: {fileID: 5205965609413697902}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &2368800298428362952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -860,25 +876,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 473250728}
---- !u!114 &2072054979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4394249199032102242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  riddle: {fileID: 928222766263883636}
-  funcIndex: 0
-  leverObject: {fileID: 5235195584728241007}
-  rotationAngle: 30
-  rotatingTime: 0.3
-  src1: {fileID: 7348159702761392138}
-  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!82 &4222915802719817403
 AudioSource:
   m_ObjectHideFlags: 0
@@ -975,6 +972,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2072054979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4394249199032102242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82f959380faf747aa06ae5ab909a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 928222766263883636}
+  funcIndex: 0
+  leverObject: {fileID: 5235195584728241007}
+  rotationAngle: 30
+  rotatingTime: 0.3
+  src1: {fileID: 7348159702761392138}
+  sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &4536608078983800829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2042,7 +2058,7 @@ PrefabInstance:
     - target: {fileID: -8091621397639493089, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7918335002988649766, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
@@ -2077,7 +2093,7 @@ PrefabInstance:
     - target: {fileID: -6698349177272427556, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6390553425048673252, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
@@ -2177,7 +2193,7 @@ PrefabInstance:
     - target: {fileID: 1215925979010177531, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2334830646326187502, guid: d109bae6582a11244b9b371ab0cd7613,
         type: 3}
