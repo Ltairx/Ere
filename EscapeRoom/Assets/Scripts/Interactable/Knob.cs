@@ -12,6 +12,8 @@ public class Knob : Knob<(int, int)>
 
 public class Knob<T> : Interactable<T>
 {
+    public AudioSource src1;
+    public AudioClip sfx_1;
     private int number;
     private bool coroutineAllowed;
 
@@ -24,6 +26,11 @@ public class Knob<T> : Interactable<T>
 
     protected override void OnStartInteract(Hand hand)
     {
+        if (src1 != null && sfx_1 != null)
+        {
+            src1.clip = sfx_1;
+            src1.Play();
+        }
         if (coroutineAllowed)
         {
             StartCoroutine("RotateWheel");

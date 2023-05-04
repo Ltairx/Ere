@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class Instructions: MonoBehaviour
 {
+    public static AudioSource src1;
+    public static AudioClip fingers_sound;
+    public static AudioClip arm_sound;
+    public static AudioClip base_sound;
     public static GameObject Base;
     public static GameObject Arm1;
     public static GameObject Arm2;
@@ -13,6 +17,11 @@ public class Instructions: MonoBehaviour
     protected float val;
     protected float duration = 1.0f;
     protected bool finished;
+
+    //public void SetSrc(AudioSource src1)
+    //{
+    //    this.src1 = src1;
+    //}
 
     public void SetVal(float val)
     {

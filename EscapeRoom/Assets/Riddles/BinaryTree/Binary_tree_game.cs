@@ -97,6 +97,7 @@ public class Binary_tree_game : Riddle
         {
             Debug.Log("DZIA£A!!!!!!!!!!!!!");
             solved = true;
+            this.OnSolve();
         }
         //Debug.Log("Procenty" + solved_percent());
     }

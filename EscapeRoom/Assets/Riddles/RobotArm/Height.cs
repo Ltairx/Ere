@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Height : Instructions
 {
+    //public AudioClip sfx_3;
     private Quaternion startRot;
     private Quaternion endRot;
     private Quaternion startRot2;
@@ -23,6 +24,11 @@ public class Height : Instructions
     }
     public override void Run() 
     {
+        if (src1 != null && arm_sound != null)
+        {
+            src1.clip = arm_sound;
+            src1.Play();
+        }
         if (trans_value + val < 0)
         {
             val = -trans_value;
@@ -51,6 +57,11 @@ public class Height : Instructions
     }
     public override void ReverseRun()
     {
+        if (src1 != null && arm_sound != null)
+        {
+            src1.clip = arm_sound;
+            src1.Play();
+        }
         trans_value -= val_reverse;
         startRot = Arm1.transform.localRotation;
         endRot = startRot * Quaternion.Euler(-val_reverse, 0, 0);

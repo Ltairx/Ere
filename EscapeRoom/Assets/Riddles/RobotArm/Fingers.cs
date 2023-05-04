@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fingers : Instructions
 {
+    //public AudioClip sfx_1;
     Vector3 startRot;
     Vector3 endRot;
     Vector3 startRot2;
@@ -32,6 +33,11 @@ public class Fingers : Instructions
     }
     public override void Run()
     {
+        if (src1 != null && fingers_sound != null)
+        {
+            src1.clip = fingers_sound;
+            src1.Play();
+        }
         if (this.val == 0 && open)
         {
             Grabber.grabbed = true;
@@ -65,6 +71,11 @@ public class Fingers : Instructions
     }
     public override void ReverseRun()
     {
+        if (src1 != null && fingers_sound != null)
+        {
+            src1.clip = fingers_sound;
+            src1.Play();
+        }
         if (value == c_value)
         {
             Grabber.grabbed = false;

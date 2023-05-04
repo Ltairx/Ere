@@ -7,6 +7,10 @@ using System.Linq;
 
 public class RobotCommunicator : Riddle
 {
+    public AudioSource src1;
+    public AudioClip fingers_sound;
+    public AudioClip arm_sound;
+    public AudioClip base_sound;
     //private bool stop = false;
     private bool done = true;
     private bool riddle_done = false;
@@ -46,6 +50,10 @@ public class RobotCommunicator : Riddle
     protected override void Start()
     {
         //base.Start();
+        Instructions.src1 = src1;
+        Instructions.fingers_sound = fingers_sound;
+        Instructions.arm_sound = arm_sound;
+        Instructions.base_sound = base_sound;
         Instructions.Base = Base;
         Instructions.Arm1 = Arm1;
         Instructions.Arm2 = Arm2;
