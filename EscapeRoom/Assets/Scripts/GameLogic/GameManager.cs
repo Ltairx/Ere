@@ -91,9 +91,11 @@ namespace GameManager
             {
                 //close Door
                 //Tell the clock to stop counting if it hasn't stopped
+                Clock.stoppedCounting = true;
                 ShowScore();
 
                 playerInLastRoom = true;
+
             }
         }
         /// <summary>
@@ -105,6 +107,13 @@ namespace GameManager
         }
 
 
-
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                PlayerInLastRoom();
+                Debug.Log("Player ended game");
+            }
+        }
     }
 }

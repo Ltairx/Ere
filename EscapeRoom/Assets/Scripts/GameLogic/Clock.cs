@@ -5,13 +5,13 @@ using TMPro;
 using GameManager;
 
 public class Clock : MonoBehaviour
-{
+{ 
 
     [SerializeField]
     TextMeshProUGUI text;
 
     const float MAXTIME = 60 * 60; //full hour
-
+    public static bool stoppedCounting = false;
     static bool gameManagerCalled = false;
     GameManager.GameManager gameManager;
 
@@ -27,13 +27,17 @@ public class Clock : MonoBehaviour
         float timePassed = Time.time;
         float timeLeft = MAXTIME - timePassed;
 
-        if(timeLeft < 0) {
-            UpdateText(0);
-            CallGameManager();
-        }        
-        else
+        if (!stoppedCounting)
         {
-            UpdateText(timeLeft);
+            if (timeLeft < 0)
+            {
+                UpdateText(0);
+                CallGameManager();
+            }
+            else
+            {
+                UpdateText(timeLeft);
+            }
         }
 
     }
@@ -61,4 +65,6 @@ public class Clock : MonoBehaviour
 
         gameManagerCalled = true;
     }
+
+    
 }
