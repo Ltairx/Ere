@@ -251,11 +251,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8096571439745173075}
     m_Modifications:
-    - target: {fileID: 36325021795552449, guid: f06bbbc2141439444a3af0f111bf5a1e,
-        type: 3}
-      propertyPath: src1
-      value: 
-      objectReference: {fileID: 8667943091122208790}
     - target: {fileID: 436911165978029418, guid: f06bbbc2141439444a3af0f111bf5a1e,
         type: 3}
       propertyPath: m_Name
@@ -366,39 +361,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1029040758192703894, guid: f06bbbc2141439444a3af0f111bf5a1e,
-        type: 3}
-      propertyPath: src1
-      value: 
-      objectReference: {fileID: 3893944908118437153}
-    - target: {fileID: 4965778978406389754, guid: f06bbbc2141439444a3af0f111bf5a1e,
-        type: 3}
-      propertyPath: src1
-      value: 
-      objectReference: {fileID: 1082058139406645352}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f06bbbc2141439444a3af0f111bf5a1e, type: 3}
 --- !u!224 &8096571439533914611 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 436911165978029422, guid: f06bbbc2141439444a3af0f111bf5a1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8524457232957985949}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1082058139406645352 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8739457819433987317, guid: f06bbbc2141439444a3af0f111bf5a1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8524457232957985949}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &8667943091122208790 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1010579697099887755, guid: f06bbbc2141439444a3af0f111bf5a1e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8524457232957985949}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &3893944908118437153 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4631643198520785340, guid: f06bbbc2141439444a3af0f111bf5a1e,
     type: 3}
   m_PrefabInstance: {fileID: 8524457232957985949}
   m_PrefabAsset: {fileID: 0}
