@@ -14,12 +14,15 @@ public class RobotCommunicator : Riddle
     //private bool stop = false;
     private bool done = true;
     private bool riddle_done = false;
-    private bool[] riddle_percentage = {false, false, false, false, false, false}; 
+    private bool[] riddle_percentage = {false, false, false, false, false, false};
+    private bool[] types_of_commands = {false, false, false};
 
     private int rotation_value = 0;
     private int height_value = 0;
     private int fingers_state = 0;
     private int iterator = 0;
+
+    private float percentage_total = 0f;
 
     public GameObject Base;
     public GameObject Arm1;
@@ -27,6 +30,7 @@ public class RobotCommunicator : Riddle
     public GameObject Wrist;
     public GameObject Finger1;
     public GameObject Finger2;
+    public GameObject Cube;
 
     public TMP_Text[] commands_text = new TMP_Text[12];
     public TMP_Text height_text;
@@ -39,6 +43,7 @@ public class RobotCommunicator : Riddle
     private Quaternion startWrist;
     private Vector3 startFinger1;
     private Vector3 startFinger2;
+    private Vector3 startCube;
 
     private List<(Operations, Instructions instruction)> queue = new List<(Operations, Instructions instruction)>();
 
@@ -49,7 +54,7 @@ public class RobotCommunicator : Riddle
 
     protected override void Start()
     {
-        //base.Start();
+        base.Start();
         Instructions.src1 = src1;
         Instructions.fingers_sound = fingers_sound;
         Instructions.arm_sound = arm_sound;
@@ -66,6 +71,7 @@ public class RobotCommunicator : Riddle
         startWrist = Wrist.transform.localRotation;
         startFinger1 = Finger1.transform.localPosition;
         startFinger2 = Finger2.transform.localPosition;
+        startCube = Cube.transform.localPosition;
         cubeDetector = Base.AddComponent<CubeDetector>();
     }
 
@@ -152,9 +158,11 @@ public class RobotCommunicator : Riddle
     }
     private void StartCommand(float not_used) 
     {
-        if(queue.Count > 0)
+        if(queue.Count > 0 && !riddle_percentage[(int)Percentage.start])
         {
             riddle_percentage[(int)Percentage.start] = true;// dodać jeszcze wykrywanie 3 komend
+            percentage_total += 0.1f;
+            GetSolvePercentage();
         }
         if (done)
         {
@@ -252,6 +260,24 @@ public class RobotCommunicator : Riddle
         foreach ((Operations o, Instructions instruction) com in queue)
         {
             //if(stop) break;
+            if (com.Item1 == Operations.height)
+            {
+                types_of_commands[(int)Operations.height] = true;
+            }
+            if (com.Item1 == Operations.rotation)
+            {
+                types_of_commands[(int)Operations.rotation] = true;
+            }
+            if (com.Item1 == Operations.fingers)
+            {
+                types_of_commands[(int)Operations.fingers] = true;
+            }
+            if (Cube.transform.localPosition != startCube && !riddle_percentage[(int)Percentage.moved])
+            {
+                riddle_percentage[(int)Percentage.moved] = true;
+                percentage_total += 0.2f;
+                GetSolvePercentage();
+            }
             com.instruction.Run();
             while (!com.instruction.Finished())
             {
@@ -259,6 +285,19 @@ public class RobotCommunicator : Riddle
                 yield return null;
             }
         }
+        if (types_of_commands[(int)Operations.height] && types_of_commands[(int)Operations.rotation] && types_of_commands[(int)Operations.fingers] && !riddle_percentage[(int)Percentage.all_commands])
+        {
+            riddle_percentage[(int)Percentage.all_commands] = true;
+            percentage_total += 0.1f;
+            GetSolvePercentage();
+        }
+        else
+        {
+            types_of_commands[(int)Operations.height] = false;
+            types_of_commands[(int)Operations.rotation] = false;
+            types_of_commands[(int)Operations.fingers] = false;
+        }
+        // ^to jest do wykrywania czy program wystartował ze wszystkimi 3 operacjami
         riddle_done = cubeDetector.CheckPosition();
         if (!riddle_done)
         {
@@ -267,7 +306,13 @@ public class RobotCommunicator : Riddle
         else
         {
             riddle_percentage[(int)Percentage.solved] = true;
-            if (queue.Count < 8) riddle_percentage[(int)Percentage.solved_under] = true;
+            percentage_total += 0.5f;
+            if (queue.Count < 8)
+            {
+                riddle_percentage[(int)Percentage.solved_under] = true;
+                percentage_total += 0.1f;
+            }
+            GetSolvePercentage();
             OnSolve();
         }
         //done = true;
@@ -294,14 +339,8 @@ public class RobotCommunicator : Riddle
         Finger1.transform.localPosition = startFinger1;
         Finger2.transform.localPosition = startFinger2;
     }
-    private float PercentageCalculator()
+    public override float GetSolvePercentage()
     {
-        float total = 0;
-        if(riddle_percentage[(int)Percentage.solved]) total += 50;
-        for (int i = 1; i < riddle_percentage.Length; i++)
-        {
-            if (riddle_percentage[i]) total += 10;
-        }
-        return total;
+        return percentage_total;
     }
 }
