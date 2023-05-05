@@ -24,8 +24,6 @@ namespace BinarySumation
                     solved = true;
                 }                
             }
-
-            Debug.Log(GetSolvePercentage());
         }
 
         public override Delegate GetFunction(int index)

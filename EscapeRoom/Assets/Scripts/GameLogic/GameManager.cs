@@ -10,8 +10,9 @@ namespace GameManager
     public class GameManager : MonoBehaviour
     {
         bool playerInLastRoom = false;
-        //public GameObject trophe;
-        List<Room> room = new List<Room>();
+        public GameObject trophe;
+        public PercentageDisplay PercDisplay;
+        [SerializeField] List<Room> room = new List<Room>();
 
 
         [SerializeField] Image darkener;
@@ -104,7 +105,7 @@ namespace GameManager
         /// </summary>
         private void ShowScore()
         {
-
+            PercDisplay.Display();
         }
 
         private void OnTriggerEnter(Collider other)
