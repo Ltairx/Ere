@@ -35,10 +35,6 @@ namespace BinarySumation
 
         private void Update()
         {
-            if (gameObject.name.Equals("Sphere.017"))
-            {
-                int a = 2;
-            }
             if (!outputLamp)
             {
                 int sum = 0;
@@ -57,10 +53,12 @@ namespace BinarySumation
                     if (srcWires[0].on)
                     {
                         renderer.material = matOn;
+                        on = true;
                     }
                     else
                     {
                         renderer.material = matOff;
+                        on = false;
                     }
                 }
             }

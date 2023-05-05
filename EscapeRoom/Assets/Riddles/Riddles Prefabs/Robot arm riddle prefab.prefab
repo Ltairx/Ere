@@ -3405,6 +3405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 769236502150186433, guid: eb315fc20c955fd4fada2f360f512834,
         type: 3}
+      propertyPath: Cube
+      value: 
+      objectReference: {fileID: 8263901616803142757}
+    - target: {fileID: 769236502150186433, guid: eb315fc20c955fd4fada2f360f512834,
+        type: 3}
       propertyPath: src1
       value: 
       objectReference: {fileID: 8661322992547230469}

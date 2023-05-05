@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using GameManager;
 
 public class Clock : MonoBehaviour
-{
+{ 
 
     [SerializeField]
     TextMeshProUGUI text;
 
     const float MAXTIME = 60 * 60; //full hour
+    public static bool stoppedCounting = false;
+    static bool gameManagerCalled = false;
+    GameManager.GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager.GameManager>();
     }
 
     // Update is called once per frame
@@ -22,7 +26,20 @@ public class Clock : MonoBehaviour
     {
         float timePassed = Time.time;
         float timeLeft = MAXTIME - timePassed;
-        UpdateText(timeLeft);
+
+        if (!stoppedCounting)
+        {
+            if (timeLeft < 0)
+            {
+                UpdateText(0);
+                CallGameManager();
+            }
+            else
+            {
+                UpdateText(timeLeft);
+            }
+        }
+
     }
 
 
@@ -36,6 +53,18 @@ public class Clock : MonoBehaviour
 
 
         text.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + miliseconds.ToString("00");
-
     }
+
+
+    void CallGameManager()
+    {
+        if (!gameManagerCalled)
+        {
+            gameManager.EndGame();
+        }
+
+        gameManagerCalled = true;
+    }
+
+    
 }
