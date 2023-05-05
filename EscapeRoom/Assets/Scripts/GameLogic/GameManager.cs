@@ -9,7 +9,7 @@ namespace GameManager
     public class GameManager : MonoBehaviour
     {
         bool playerInLastRoom = false;
-        public GameObject trophe;
+        //public GameObject trophe;
         List<Room> room = new List<Room>();
 
 
@@ -56,7 +56,7 @@ namespace GameManager
 
             //move the player to the gameManager. As simple as that XD
             player.transform.position = transform.position;
-            trophe.SetActive(false);
+            //trophe.SetActive(false);
 
 
 
