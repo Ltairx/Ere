@@ -3,47 +3,7 @@ guid: 6abba92216b34ff4198d183ef90ab057
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: adfd691c809e7db4283b92417f5cb983, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 269fb564b7f381d43ba023dc1379cbd7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: d9faeef1113f3fe4382f4ab5f5c3e28f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: button
-    second: {fileID: 2100000, guid: d9b1e62bd8f45bc4b870a78eb405d856, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: disks
-    second: {fileID: 2100000, guid: 4c745be3489ab3d49af90874be2fe75c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: glow
-    second: {fileID: 2100000, guid: 3cf7649b7088f51438c54f972ecaca2c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "szk\u0142o"
-    second: {fileID: 2100000, guid: 0d728391ca35af44f82d65c7ea76770a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wire
-    second: {fileID: 2100000, guid: 09bc91f3e14c86549b66a02459ba3b80, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
