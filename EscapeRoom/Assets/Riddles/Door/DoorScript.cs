@@ -4,33 +4,22 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class EnterScr : MonoBehaviour
+public class DoorScript : MonoBehaviour
 {
     public TMP_Text Password;
     public TMP_Text InputText;
     public GameObject objectToRotate;
 
-    private bool textsMatch = false;
     private bool objectRotated = false;
+    public bool IsKeypad;
 
     private Quaternion start;
     private Quaternion stop;
 
-    void OnMouseDown()
-    {
-        if (Password.text == InputText.text)
-        {
-            textsMatch = true;
-        }
-        else
-        {
-            InputText.text = "";
-        }
-    }
-
+    // Update is called once per frame
     private void Update()
     {
-        if (textsMatch && !objectRotated)
+        if (Password.text == InputText.text && !objectRotated && IsKeypad)
         {
             StartCoroutine(rotate());
             objectRotated = true;
@@ -48,7 +37,7 @@ public class EnterScr : MonoBehaviour
             opening(Percentage);
             yield return null;
         }
-        opening(1f); 
+        opening(1f);
     }
 
     private void Start()
