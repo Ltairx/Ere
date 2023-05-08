@@ -29,11 +29,23 @@ namespace Ere.Riddles.RleCompression
         public void CheckPassword((int, int) indexAndNumber) 
         {
             result[indexAndNumber.Item1] = indexAndNumber.Item2;
-            
             if (password.OrderBy(x => x).SequenceEqual(result.OrderBy(x => x)))
             {
                 Open();
             }
+        }
+
+        public float CheckPercentage()
+        {
+            var max = password.Count;
+            var min = 0;
+
+            for (int i = 0; i < max; i++)
+            {
+                if (result[i] == password[i]) min++;
+            }
+
+            return (float)min / max;
         }
         
         private void Open()

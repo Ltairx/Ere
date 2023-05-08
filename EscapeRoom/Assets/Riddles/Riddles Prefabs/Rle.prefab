@@ -1,5 +1,113 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4039114001692236294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6024675088363760702}
+  - component: {fileID: 8632313362230733713}
+  - component: {fileID: 6132083906926690195}
+  - component: {fileID: 7710713953272027630}
+  - component: {fileID: 51418003802074672}
+  m_Layer: 10
+  m_Name: ResetButton
+  m_TagString: Interactable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6024675088363760702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039114001692236294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.215, z: 0.895}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 8302420524351490333}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8632313362230733713
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039114001692236294}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6132083906926690195
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039114001692236294}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2db07330f191b6b438f72b3f82e928df, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &7710713953272027630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039114001692236294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &51418003802074672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039114001692236294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6eb17c498cf38488df8679f2222ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riddle: {fileID: 8302420524351490332}
+  funcIndex: 15
 --- !u!1 &8302420524091236213
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +192,7 @@ Transform:
   - {fileID: 8302420524091236212}
   - {fileID: 8302420525247587277}
   - {fileID: 8302420525014122342}
+  - {fileID: 6024675088363760702}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,6 +211,7 @@ MonoBehaviour:
   room: {fileID: 0}
   degree: 0
   box: {fileID: 8302420524177526644}
+  puzzle: {fileID: 8302420524091236213}
 --- !u!1 &8302420525014122343
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +413,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532188987115860
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +752,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189039356994
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1091,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189172604468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1430,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189211378022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1561,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189426110351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1692,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189458016176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1823,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189463381446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,6 +1954,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189479043795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,6 +2179,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189637726105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,6 +2947,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532189917982863
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,6 +3286,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190125466560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3417,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190165649092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,6 +3548,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190167613821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +3679,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190364653734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3810,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190593421307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,6 +4149,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190638054744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4327,6 +4453,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190717518254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4584,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190810017023
 GameObject:
   m_ObjectHideFlags: 0
@@ -4874,6 +5002,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1 &9221532190974759378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,6 +5133,7 @@ MonoBehaviour:
   lerpness: 100
   snapParent: {fileID: 9221532189667355643}
   turnOffGravity: 1
+  camera: {fileID: 0}
 --- !u!1001 &8302420525494228650
 PrefabInstance:
   m_ObjectHideFlags: 0

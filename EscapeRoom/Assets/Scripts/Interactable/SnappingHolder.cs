@@ -9,7 +9,12 @@ public class SnappingHolder : Holder
     private Rigidbody rigidBody;
     private float snapParentWidth; 
     private float snapParentHeight; 
-    private float snapParentDepth; 
+    private float snapParentDepth;
+    private bool snap = false;
+    [field: SerializeField] private Camera camera;
+
+    private Vector3 originalPosition; 
+    private Quaternion originalRotation; 
 
     protected override void Start()
     {
@@ -23,11 +28,14 @@ public class SnappingHolder : Holder
         rigidBody = GetComponent<Rigidbody>();
         originalParent = gameObject.transform.parent;
 
-        var renderer = snapParent.GetComponent<MeshRenderer>();
-        var size = renderer.bounds.size;
+        var parentCollider = snapParent.GetComponent<BoxCollider>();
+        var size = parentCollider.size;
         snapParentWidth = size.x / 2;
         snapParentHeight = size.y / 2;
         snapParentDepth = size.z / 2;
+
+        originalPosition = gameObject.transform.position;
+        originalRotation = gameObject.transform.rotation;
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -37,7 +45,7 @@ public class SnappingHolder : Holder
         if (collisionObject != snapParent) return;
         
         transform.SetParent(collisionObject.transform);
-
+        snap = true;
         if (turnOffGravity)
         {
             rigidBody.useGravity = false;
@@ -52,6 +60,7 @@ public class SnappingHolder : Holder
         if (collisionObject != snapParent) return;
         
         transform.SetParent(originalParent);
+        snap = false;
         rigidBody.useGravity = true;
     }
 
@@ -66,19 +75,33 @@ public class SnappingHolder : Holder
             rigidBody.constraints = RigidbodyConstraints.None;
         }
     }
-
+    
+    
     protected override void Move(Hand hand)
     {
+        //var yRot = transform.rotation.y;
+        var rotation = camera.transform.rotation;
+        
+        transform.LookAt(transform.position + rotation * Vector3.up, rotation * Vector3.back);
+        transform.localRotation = transform.localRotation * Quaternion.Euler(0, 90, 0);
+
+        
         base.Move(hand);
         
-        if (transform.localPosition.z > -snapParentDepth && transform.localPosition.z < snapParentDepth &&
+        if (snap && transform.localPosition.z > -snapParentDepth && transform.localPosition.z < snapParentDepth &&
             transform.localPosition.y > -snapParentHeight && transform.localPosition.y < snapParentHeight &&
             transform.localPosition.x > -snapParentWidth && transform.localPosition.x < snapParentWidth)
         {
             var localPosition = transform.localPosition;
-            localPosition = new Vector3(localPosition.x, localPosition.y, -snapParentDepth);
+            localPosition = new Vector3(localPosition.x, localPosition.y, 0);
             transform.localPosition = localPosition;
         }
 
+    }
+
+    public void ResetPosition()
+    {
+        gameObject.transform.position = originalPosition;
+        gameObject.transform.rotation = originalRotation;
     }
 }

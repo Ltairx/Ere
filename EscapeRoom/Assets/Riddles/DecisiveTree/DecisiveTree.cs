@@ -24,6 +24,12 @@ public class DecisiveTree : Riddle
         
     }
 
+    protected override void Start()
+    {
+        base.Start();
+        map.Initialize();
+    }
+
     void StartSimulating(float notUsedArg)
     {
         if (!simulating)

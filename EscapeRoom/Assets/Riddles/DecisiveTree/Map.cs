@@ -44,8 +44,7 @@ public class Map : MonoBehaviour
     */
 
 
-    // Start is called before the first frame update
-    void Start()
+    public void Initialize()
     {        
         tiles= new Tile[size,size];
         for (int i = 0; i < size; i++)
