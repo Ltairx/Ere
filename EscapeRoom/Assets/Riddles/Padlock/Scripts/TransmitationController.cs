@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class TransmitationController : Riddle
 {
@@ -18,6 +19,9 @@ public class TransmitationController : Riddle
     private int a = 1, b = 1, c = 1, d = 1; //rozwiazanie - 5 1 2 4/5 2 1 4
     private bool done = false;
     private float total_perc = 0f;
+
+    public RawImage Transmitancja;
+    public Texture Trans_solved;
 
     protected override void Start()
     {
@@ -86,11 +90,11 @@ public class TransmitationController : Riddle
             s_0.text = a.ToString();
             if ((a == 5 && b == 1 && c == 2 && d == 4 && !done) || (a == 5 && b == 2 && c == 1 && d == 4 && !done))
             {
+                Transmitancja.texture = Trans_solved;
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Decrement1(float not_used)
@@ -119,9 +123,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Increment2(float not_used)
@@ -150,9 +153,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Decrement2(float not_used)
@@ -180,9 +182,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Increment3(float not_used)
@@ -211,9 +212,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Decrement3(float not_used)
@@ -242,9 +242,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Increment4(float not_used)
@@ -273,9 +272,8 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
     private void Decrement4(float not_used)
@@ -304,11 +302,18 @@ public class TransmitationController : Riddle
             {
                 done = true;
                 OnSolve();
-                total_perc = 1f;
-                GetSolvePercentage();
             }
+            GetSolvePercentage();
         }
     }
+
+    protected override void OnSolve()
+    {
+        Transmitancja.texture = Trans_solved;
+        total_perc = 1f;
+        base.OnSolve();
+    }
+
     public override float GetSolvePercentage()
     {
         return total_perc;
