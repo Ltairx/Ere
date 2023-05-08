@@ -25,7 +25,8 @@ public class Interactable<T> : InteractableInterface {
 
     public FunctionGettable riddle; //nie zmieniam nazwy bo inaczej unity g³upieje....
     public int funcIndex;
-    protected Action<T> callFunc;    
+    protected Action<T> callFunc;
+    [SerializeField]
     protected T valToSend;
 
     // Start is called before the first frame update
