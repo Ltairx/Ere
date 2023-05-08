@@ -162,7 +162,6 @@ public class RobotCommunicator : Riddle
         {
             riddle_percentage[(int)Percentage.start] = true;// dodać jeszcze wykrywanie 3 komend
             percentage_total += 0.1f;
-            GetSolvePercentage();
         }
         if (done)
         {
@@ -276,7 +275,6 @@ public class RobotCommunicator : Riddle
             {
                 riddle_percentage[(int)Percentage.moved] = true;
                 percentage_total += 0.2f;
-                GetSolvePercentage();
             }
             com.instruction.Run();
             while (!com.instruction.Finished())
@@ -289,7 +287,6 @@ public class RobotCommunicator : Riddle
         {
             riddle_percentage[(int)Percentage.all_commands] = true;
             percentage_total += 0.1f;
-            GetSolvePercentage();
         }
         else
         {
@@ -312,7 +309,6 @@ public class RobotCommunicator : Riddle
                 riddle_percentage[(int)Percentage.solved_under] = true;
                 percentage_total += 0.1f;
             }
-            GetSolvePercentage();
             OnSolve();
         }
         //done = true;

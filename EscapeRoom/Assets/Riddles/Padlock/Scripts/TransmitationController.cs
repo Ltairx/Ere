@@ -90,11 +90,9 @@ public class TransmitationController : Riddle
             s_0.text = a.ToString();
             if ((a == 5 && b == 1 && c == 2 && d == 4 && !done) || (a == 5 && b == 2 && c == 1 && d == 4 && !done))
             {
-                Transmitancja.texture = Trans_solved;
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Decrement1(float not_used)
@@ -124,7 +122,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Increment2(float not_used)
@@ -154,7 +151,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Decrement2(float not_used)
@@ -183,7 +179,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Increment3(float not_used)
@@ -213,7 +208,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Decrement3(float not_used)
@@ -243,7 +237,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Increment4(float not_used)
@@ -273,7 +266,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
     private void Decrement4(float not_used)
@@ -303,7 +295,6 @@ public class TransmitationController : Riddle
                 done = true;
                 OnSolve();
             }
-            GetSolvePercentage();
         }
     }
 
@@ -316,6 +307,14 @@ public class TransmitationController : Riddle
 
     public override float GetSolvePercentage()
     {
+        if(!done)
+        {
+            if (a == 5) total_perc += 0.25f;
+            if ((b == 1 && c == 2) || (b == 2 && c == 1)) total_perc += 0.5f;
+            else if (b == 1 || b == 2) total_perc += 0.25f;
+            else if (c == 1 || c == 2) total_perc += 0.25f;
+            if (d == 4) total_perc += 0.25f;
+        }
         return total_perc;
     }
 }
