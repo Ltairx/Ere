@@ -356,6 +356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   blok: {fileID: 436911164273701670}
   trans: {fileID: 436911165837393180}
 --- !u!1 &436911164808281590
@@ -448,6 +450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   blok: {fileID: 436911165242451557}
   trans: {fileID: 436911165229685463}
 --- !u!1 &436911165229685457
@@ -939,6 +943,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   blok: {fileID: 436911165362840451}
   trans: {fileID: 436911164117071005}
 --- !u!1 &436911165837393182
@@ -2362,7 +2368,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6f2915266fc82bb4695e5ff2576e9d92,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 15.273171
+      value: 11.602112
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f2915266fc82bb4695e5ff2576e9d92,
         type: 3}

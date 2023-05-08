@@ -429,7 +429,6 @@ GameObject:
   - component: {fileID: 6401026974206886861}
   - component: {fileID: 2517942048248454356}
   - component: {fileID: 3952829948227616024}
-  - component: {fileID: 286759551}
   - component: {fileID: 2995070738871870293}
   m_Layer: 5
   m_Name: text (TMP) (13)
@@ -553,21 +552,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &286759551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552491636238870012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5c6d2933d97d74cbb1234332c54aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 3952829948227616024}
 --- !u!114 &2995070738871870293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 3952829948227616024}
 --- !u!1 &1084257707179071686
 GameObject:
@@ -594,7 +580,6 @@ GameObject:
   - component: {fileID: 4744595544154104723}
   - component: {fileID: 261914253622271098}
   - component: {fileID: 4654515022326362939}
-  - component: {fileID: 353536760}
   - component: {fileID: 1436474904619928283}
   m_Layer: 5
   m_Name: text (TMP) (16)
@@ -718,38 +703,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &353536760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084257707179071686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b760895211eaa7488fba68a3c64bbea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outputText: {fileID: 4654515022326362939}
-  randomIndex: 0
-  binIndex: 
-  bit1: 0
-  bit2: 0
-  bit3: 0
-  bit4: 0
-  bit5: 0
-  bit6: 0
-  bit7: 0
-  FirstBinNumber: {fileID: 77447719}
-  SecBinaryNumber: {fileID: 671167230}
-  ThirdBinaryNumber: {fileID: 510261685}
-  FourthBinaryNumber: {fileID: 1509522939}
-  FifthBinaryNumber: {fileID: 286759551}
-  SixthBinaryNumber: {fileID: 816206718}
-  SeventhBinaryNumber: {fileID: 1431453877}
-  LightBulb: {fileID: 5138502745270286303}
-  BulbYellow: {fileID: 2100000, guid: 6fa7e559791b99b429a0983f7688c6a0, type: 2}
-  BulbColor: {fileID: 2100000, guid: 559f6023eaf5463488c752a50b49f0c7, type: 2}
 --- !u!114 &1436474904619928283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +715,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b760895211eaa7488fba68a3c64bbea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room: {fileID: 0}
+  degree: 1
+  keypad: {fileID: 0}
+  riddlePassword: 
   outputText: {fileID: 4654515022326362939}
   randomIndex: 0
   binIndex: 
@@ -1248,7 +1205,6 @@ GameObject:
   - component: {fileID: 1680709877019390620}
   - component: {fileID: 756159501608992933}
   - component: {fileID: 8757808050255535738}
-  - component: {fileID: 297490352}
   - component: {fileID: 1125988241150216711}
   m_Layer: 5
   m_Name: text (TMP) (8)
@@ -1372,19 +1328,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &297490352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111131295549726765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a86460eed134747bdaf8a1f302301e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 8757808050255535738}
 --- !u!114 &1125988241150216711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1398,100 +1341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8757808050255535738}
---- !u!1 &2324281154724753902
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6976459547434417714}
-  - component: {fileID: 8562194638282331677}
-  - component: {fileID: 5930707846202080072}
-  - component: {fileID: 5329903821608569364}
-  m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6976459547434417714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324281154724753902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 0.86742, y: 0.86742, z: 0.86742}
-  m_Children: []
-  m_Father: {fileID: 5809429098985636006}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8562194638282331677
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324281154724753902}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5930707846202080072
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324281154724753902}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2d64b64f010979445a978cdb9e087007, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!136 &5329903821608569364
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2324281154724753902}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &2455537794599193278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1521,6 @@ GameObject:
   - component: {fileID: 2272748645612465857}
   - component: {fileID: 7588818965299951004}
   - component: {fileID: 1104276448715347865}
-  - component: {fileID: 510261685}
   - component: {fileID: 611261793331921803}
   m_Layer: 5
   m_Name: text (TMP) (11)
@@ -1796,21 +1644,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &510261685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2736261976336477973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42a558eb71a2c9c4aa81ad8a2b6ae33c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 1104276448715347865}
 --- !u!114 &611261793331921803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,6 +1658,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 1104276448715347865}
 --- !u!1 &2938092194688755995
 GameObject:
@@ -2100,7 +1935,6 @@ GameObject:
   - component: {fileID: 7569459345183483454}
   - component: {fileID: 7578972123158566241}
   - component: {fileID: 2488505304103742938}
-  - component: {fileID: 77447719}
   - component: {fileID: 2009799938912064467}
   m_Layer: 5
   m_Name: text (TMP) (9)
@@ -2224,21 +2058,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &77447719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3447120375904975104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dcee2d08ef7ff846bda071f498891c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 2488505304103742938}
 --- !u!114 &2009799938912064467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2253,6 +2072,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 2488505304103742938}
 --- !u!1 &3801707034977036876
 GameObject:
@@ -2359,7 +2180,6 @@ GameObject:
   - component: {fileID: 1066737798083215139}
   - component: {fileID: 93085719406280778}
   - component: {fileID: 1653102681814448059}
-  - component: {fileID: 1544734008}
   - component: {fileID: 8468957770117697054}
   m_Layer: 5
   m_Name: text (TMP) (4)
@@ -2483,19 +2303,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1544734008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3851391523301377730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbeecd1ad74ad254abf0f378a68ecd0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 1653102681814448059}
 --- !u!114 &8468957770117697054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2520,7 +2327,6 @@ GameObject:
   - component: {fileID: 6490656498651332247}
   - component: {fileID: 4611049847544205033}
   - component: {fileID: 3288380023576050384}
-  - component: {fileID: 671167230}
   - component: {fileID: 7591764863762216053}
   m_Layer: 5
   m_Name: text (TMP) (10)
@@ -2644,21 +2450,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &671167230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3907720663274457030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d09a8a4e32926bf4fa4059e40b3c1ac9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 3288380023576050384}
 --- !u!114 &7591764863762216053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 3288380023576050384}
 --- !u!1 &3923830969189543768
 GameObject:
@@ -2779,7 +2572,6 @@ GameObject:
   - component: {fileID: 8024708516247901230}
   - component: {fileID: 505347508483574757}
   - component: {fileID: 3457657379812197284}
-  - component: {fileID: 816206718}
   - component: {fileID: 2836811306844669616}
   m_Layer: 5
   m_Name: text (TMP) (14)
@@ -2903,21 +2695,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &816206718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3983757955811369984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28a7ed70b28786144af554590b0832bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 3457657379812197284}
 --- !u!114 &2836811306844669616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2932,6 +2709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 3457657379812197284}
 --- !u!1 &4066669962966133924
 GameObject:
@@ -2970,7 +2749,6 @@ Transform:
   - {fileID: 8903674541091048154}
   - {fileID: 8903674540345643256}
   - {fileID: 1825528147}
-  - {fileID: 5809429098985636006}
   m_Father: {fileID: 7901804077370131188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2985,7 +2763,6 @@ GameObject:
   - component: {fileID: 8322514798369605411}
   - component: {fileID: 1177826958489052355}
   - component: {fileID: 6122208039884361700}
-  - component: {fileID: 765879858}
   - component: {fileID: 1871868688608484664}
   m_Layer: 5
   m_Name: text (TMP) (6)
@@ -3109,19 +2886,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &765879858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4251139350236807208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6946a042b14c54ea0422a5939a4864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 6122208039884361700}
 --- !u!114 &1871868688608484664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3240,7 +3004,6 @@ GameObject:
   - component: {fileID: 8333732558740824745}
   - component: {fileID: 4672255774625516445}
   - component: {fileID: 2004259931900525040}
-  - component: {fileID: 1509522939}
   - component: {fileID: 8887549778718920044}
   m_Layer: 5
   m_Name: text (TMP) (12)
@@ -3364,21 +3127,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1509522939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4434284816184046387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a65c10fef8566844856b7660e747e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 2004259931900525040}
 --- !u!114 &8887549778718920044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3393,6 +3141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 2004259931900525040}
 --- !u!1 &4600884664504338252
 GameObject:
@@ -3426,99 +3176,6 @@ Transform:
   m_Father: {fileID: 5192736844923557002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5138502745270286303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7839850404288295040}
-  - component: {fileID: 9057766850108308499}
-  - component: {fileID: 5635442473930800676}
-  - component: {fileID: 1886932956314238964}
-  m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7839850404288295040
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138502745270286303}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.55, z: 0}
-  m_LocalScale: {x: 2.4761, y: 2.4761, z: 2.4761}
-  m_Children: []
-  m_Father: {fileID: 5809429098985636006}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &9057766850108308499
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138502745270286303}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5635442473930800676
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138502745270286303}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 559f6023eaf5463488c752a50b49f0c7, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!135 &1886932956314238964
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5138502745270286303}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5171786266602671506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,6 +3227,8 @@ MonoBehaviour:
   leverObject: {fileID: 256102660535346314}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &5607741823119015083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +3280,8 @@ MonoBehaviour:
   leverObject: {fileID: 1181859589130280715}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &5875481953340832058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,7 +3293,6 @@ GameObject:
   - component: {fileID: 2167935237856302997}
   - component: {fileID: 5355060235682762352}
   - component: {fileID: 6117109126882797025}
-  - component: {fileID: 244079226}
   - component: {fileID: 3038759583681546523}
   m_Layer: 5
   m_Name: text (TMP) (7)
@@ -3756,19 +3416,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &244079226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5875481953340832058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df4a4a6d7ecf764891a7ad92099fac0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 6117109126882797025}
 --- !u!114 &3038759583681546523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3793,7 +3440,6 @@ GameObject:
   - component: {fileID: 7578513579263331472}
   - component: {fileID: 4091462237050285818}
   - component: {fileID: 2893018193244490400}
-  - component: {fileID: 1431453877}
   - component: {fileID: 6048974998207693526}
   m_Layer: 5
   m_Name: text (TMP) (15)
@@ -3917,21 +3563,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1431453877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6629102668475769016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e34012280aebf4db340d26cf03126d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  text: {fileID: 2893018193244490400}
 --- !u!114 &6048974998207693526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,6 +3577,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 0
+  keypad: {fileID: 0}
+  riddlePassword: 
   text: {fileID: 2893018193244490400}
 --- !u!1 &7091327954682984802
 GameObject:
@@ -3978,38 +3611,6 @@ Transform:
   - {fileID: 6806923852535155754}
   m_Father: {fileID: 7546367990694765297}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7179986641732904031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5809429098985636006}
-  m_Layer: 0
-  m_Name: LightBulb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5809429098985636006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7179986641732904031}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.13, y: 3.8, z: 108.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6976459547434417714}
-  - {fileID: 7839850404288295040}
-  m_Father: {fileID: 924232695673933351}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7271075443323162728
 GameObject:
@@ -4062,6 +3663,8 @@ MonoBehaviour:
   leverObject: {fileID: 3123502439749280165}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &7382112327517192484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4073,7 +3676,6 @@ GameObject:
   - component: {fileID: 2082841670119096862}
   - component: {fileID: 6671041751888629623}
   - component: {fileID: 5670616799180008533}
-  - component: {fileID: 744623174}
   - component: {fileID: 5341064087641518809}
   m_Layer: 5
   m_Name: text (TMP) (5)
@@ -4197,19 +3799,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &744623174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7382112327517192484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36527d84ef898ca458c24b48a9b75135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 5670616799180008533}
 --- !u!114 &5341064087641518809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4751,6 +4340,8 @@ MonoBehaviour:
   leverObject: {fileID: 4600884664504338252}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &8713484810418677195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,6 +4393,8 @@ MonoBehaviour:
   leverObject: {fileID: 7091327954682984802}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &8791430213684881986
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,6 +4446,8 @@ MonoBehaviour:
   leverObject: {fileID: 2537186177074982961}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1 &8903674539867530963
 GameObject:
   m_ObjectHideFlags: 0
@@ -17255,6 +16850,8 @@ MonoBehaviour:
   leverObject: {fileID: 7939380788240256462}
   rotationAngle: -60
   rotatingTime: 1
+  src1: {fileID: 0}
+  sfx_1: {fileID: 0}
 --- !u!1001 &7208679158507076922
 PrefabInstance:
   m_ObjectHideFlags: 0

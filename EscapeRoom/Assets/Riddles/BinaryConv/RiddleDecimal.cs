@@ -31,10 +31,10 @@ public class RiddleDecimal : Riddle
     public Material BulbColor;
 
     override protected void Start()
-    {
-        base.Start();
+    {        
         randomIndex = Random.Range(64, 128);
         binIndex = System.Convert.ToString(randomIndex, 2);
+        riddlePassword = binIndex;
         outputText.text = "" + randomIndex;
 
         bit1 = int.Parse(binIndex.Substring(0, 1));
@@ -44,6 +44,7 @@ public class RiddleDecimal : Riddle
         bit5 = int.Parse(binIndex.Substring(4, 1));
         bit6 = int.Parse(binIndex.Substring(5, 1));
         bit7 = int.Parse(binIndex.Substring(6, 1));
+        base.Start();
     }
 
     private void Update()

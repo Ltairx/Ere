@@ -41,6 +41,6 @@ public class PercentageDisplay : MonoBehaviour
         AutBar.transform.localScale = scale_aut;
         InfBar.SetActive(true);
         AutBar.SetActive(true);
-        //RawText.SetActive(true);
+        RawText.SetActive(true);
     }
 }

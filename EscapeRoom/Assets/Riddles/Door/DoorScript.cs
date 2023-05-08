@@ -5,26 +5,13 @@ using TMPro;
 using System;
 
 public class DoorScript : MonoBehaviour
-{
-    public TMP_Text Password;
-    public TMP_Text InputText;
-    public GameObject objectToRotate;
-
+{    
     private bool objectRotated = false;
-    public bool IsKeypad;
+    [SerializeField] private bool clockwise = false;
 
     private Quaternion start;
     private Quaternion stop;
 
-    // Update is called once per frame
-    private void Update()
-    {
-        if (Password.text == InputText.text && !objectRotated && IsKeypad)
-        {
-            StartCoroutine(rotate());
-            objectRotated = true;
-        }
-    }
 
     IEnumerator rotate()
     {
@@ -42,12 +29,21 @@ public class DoorScript : MonoBehaviour
 
     private void Start()
     {
-        start = objectToRotate.transform.localRotation;
-        stop = start * Quaternion.Euler(0, 0, -90);
+        start = transform.localRotation;
+        stop = start * Quaternion.Euler(0, clockwise? 90 : - 90, 0);
 
     }
     private void opening(float proc)
     {
-        objectToRotate.transform.localRotation = Quaternion.Lerp(start, stop, proc);
+        transform.localRotation = Quaternion.Lerp(start, stop, proc);
+    }
+
+    public void OpenTheDoor()
+    {
+        if (!objectRotated)
+        {
+            StartCoroutine(rotate());
+            objectRotated = true;
+        }
     }
 }

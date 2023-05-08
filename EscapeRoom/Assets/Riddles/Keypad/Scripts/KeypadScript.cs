@@ -3,126 +3,74 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using System.Linq;
+using System.Text;
 
-public class KeypadScript : Riddle
+public class KeypadScript : FunctionGettable
 {
-    public TMP_Text text;
+    public TMP_Text inputText;
+    public List<string> password;
+
+    [SerializeField] DoorScript door;
+
+    int digits = 0;
+
+    private void Update()
+    {
+
+        //if full number inputed
+        if (password.Count>0 && digits == password[0].Length)
+        {
+
+
+            if (password.Contains(inputText.text))
+            {
+                door.OpenTheDoor();
+            }
+            else
+            {
+                inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
+                digits = 0;
+            }
+        }
+        
+
+    }
+
+    public void AddPassword(string newPassword)
+    {
+        password.Add(newPassword);
+
+        //set _ for each digit
+        inputText.text = new string(newPassword.ToCharArray().Select(c => '_').ToArray());
+    }
+
 
     public override Delegate GetFunction(int index)
     {
         switch (index)
         {
-            case 0: //wpisanie komendy height
+            case 0: //dodanie cyfry
                 return (Action<float>)KeyZero;
-            case 1: //wpisanie komendy rotation
-                return (Action<float>)KeyOne;
-            case 2: //wpisanie komendy finger
-                return (Action<float>)KeyTwo;
-            case 3: //start
-                return (Action<float>)KeyThree;
-            case 4: //stop
-                return (Action<float>)KeyFour;
-            case 5: //reset
-                return (Action<float>)KeyFive;
-            case 6: //delline
-                return (Action<float>)KeySix;
-            case 7: //incr_hei
-                return (Action<float>)KeySeven;
-            case 8: //incr_rot
-                return (Action<float>)KeyEight;
-            case 9: //change_state
-                return (Action<float>)KeyNine;
-            case 10: //change_state
+            case 1: //czyszczenie ekranu
                 return (Action<float>)KeyClear;
             default:
                 return null;
         }
     }
 
-    void KeyZero(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "0";
-        }
-    }
 
-    void KeyOne(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "1";
-        }
-    }
 
-    void KeyTwo(float not_used)
+    void KeyZero(float digit)
     {
-        if (text.text.Length < 9)
-        {
-            text.text += "2";
-        }
-    }
-
-    void KeyThree(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "3";
-        }
-    }
-
-    void KeyFour(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "4";
-        }
-    }
-
-    void KeyFive(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "5";
-        }
-    }
-
-    void KeySix(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "6";
-        }
-    }
-
-    void KeySeven(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "7";
-        }
-    }
-
-    void KeyEight(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "8";
-        }
-    }
-
-    void KeyNine(float not_used)
-    {
-        if (text.text.Length < 9)
-        {
-            text.text += "9";
-        }
+        StringBuilder sb = new StringBuilder( inputText.text);
+        sb[digits++] = (char)((int)digit+'0');
+        inputText.text = sb.ToString();
     }
 
     void KeyClear(float not_used)
     {
-        text.text = "";
+        inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
     }
-
 }
 
