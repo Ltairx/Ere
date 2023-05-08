@@ -4,9 +4,26 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class KeypadScript : Riddle
+public class KeypadScript : FunctionGettable
 {
-    public TMP_Text text;
+    public TMP_Text inputText;
+    public List<string> password;
+
+    [SerializeField] DoorScript door;
+
+    private void Update()
+    {
+        if (password.Contains(inputText.text))
+        {
+            door.OpenTheDoor();
+        }
+    }
+
+    public void AddPassword(string newPassword)
+    {
+        password.Add(newPassword);
+    }
+
 
     public override Delegate GetFunction(int index)
     {
@@ -39,90 +56,93 @@ public class KeypadScript : Riddle
         }
     }
 
+
+    #region keys
+
     void KeyZero(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "0";
+            inputText.text += "0";
         }
     }
 
     void KeyOne(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "1";
+            inputText.text += "1";
         }
     }
 
     void KeyTwo(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "2";
+            inputText.text += "2";
         }
     }
 
     void KeyThree(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "3";
+            inputText.text += "3";
         }
     }
 
     void KeyFour(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "4";
+            inputText.text += "4";
         }
     }
 
     void KeyFive(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "5";
+            inputText.text += "5";
         }
     }
 
     void KeySix(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "6";
+            inputText.text += "6";
         }
     }
 
     void KeySeven(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "7";
+            inputText.text += "7";
         }
     }
 
     void KeyEight(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "8";
+            inputText.text += "8";
         }
     }
 
     void KeyNine(float not_used)
     {
-        if (text.text.Length < 9)
+        if (inputText.text.Length < 9)
         {
-            text.text += "9";
+            inputText.text += "9";
         }
     }
 
     void KeyClear(float not_used)
     {
-        text.text = "";
+        inputText.text = "";
     }
-
+    #endregion
 }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class FourthBinaryNumber : Riddle
+public class FourthBinaryNumber : FunctionGettable
 {
     public TMP_Text text;
     private void SetDigit(bool s)

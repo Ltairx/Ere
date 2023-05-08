@@ -8,6 +8,9 @@ public class Riddle : FunctionGettable
 {
     public Room room;
     public Degree degree;
+    [SerializeField] KeypadScript keypad;
+
+    [SerializeField] protected string riddlePassword;
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -20,7 +23,18 @@ public class Riddle : FunctionGettable
         {
             Debug.LogError("Riddle: " + gameObject.name + " has missing room reference");
         }
+
+        SetPassword();
     }
+
+    protected void SetPassword()
+    {
+        if (keypad != null)
+        {
+            keypad.AddPassword(riddlePassword);
+        }
+    }
+
 
     // Update is called once per frame
     void Update()

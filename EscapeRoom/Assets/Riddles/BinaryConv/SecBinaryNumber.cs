@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class SecBinaryNumber : Riddle
+public class SecBinaryNumber : FunctionGettable
 {
     public TMP_Text text;
     private void SetDigit(bool s)
