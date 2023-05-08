@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class RiddleDecimal : MonoBehaviour
+public class RiddleDecimal : Riddle
 {
     public TMP_Text outputText;
     public int randomIndex;
@@ -30,8 +30,9 @@ public class RiddleDecimal : MonoBehaviour
     public Material BulbYellow;
     public Material BulbColor;
 
-    private void Start()
+    override protected void Start()
     {
+        base.Start();
         randomIndex = Random.Range(64, 128);
         binIndex = System.Convert.ToString(randomIndex, 2);
         outputText.text = "" + randomIndex;
