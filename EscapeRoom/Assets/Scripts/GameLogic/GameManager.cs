@@ -60,7 +60,7 @@ namespace GameManager
 
             //move the player to the gameManager. As simple as that XD
             player.transform.position = transform.position;
-            //trophe.SetActive(false);
+            trophe.SetActive(false);
             player.transform.rotation = transform.rotation;
 
             if (trophe != null)
