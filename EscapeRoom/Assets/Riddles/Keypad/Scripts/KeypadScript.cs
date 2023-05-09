@@ -13,26 +13,24 @@ public class KeypadScript : FunctionGettable
 
     [SerializeField] DoorScript door;
 
+    private Material disMat;
+    private Color basicColor; 
+
+
     int digits = 0;
+    bool blocked = false;
+
+    private void Start()
+    {
+        disMat = gameObject.GetComponent<Renderer>().materials[1];
+        basicColor = disMat.color;
+    }
+
 
     private void Update()
     {
 
-        //if full number inputed
-        if (password.Count>0 && digits == password[0].Length)
-        {
-
-
-            if (password.Contains(inputText.text))
-            {
-                door.OpenTheDoor();
-            }
-            else
-            {
-                inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
-                digits = 0;
-            }
-        }
+        //if full number inputed        
         
 
     }
@@ -63,14 +61,61 @@ public class KeypadScript : FunctionGettable
 
     void KeyZero(float digit)
     {
-        StringBuilder sb = new StringBuilder( inputText.text);
-        sb[digits++] = (char)((int)digit+'0');
-        inputText.text = sb.ToString();
+        if (!blocked)
+        {
+            if (digits != password[0].Length)
+            {
+                StringBuilder sb = new StringBuilder(inputText.text);
+                sb[digits++] = (char)((int)digit + '0');
+                inputText.text = sb.ToString();
+                CheckPassword();
+            }
+        }
     }
 
     void KeyClear(float not_used)
     {
-        inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
+        if (!blocked)
+        {
+            inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
+        }
     }
+
+
+    void CheckPassword()
+    {
+        if (password.Count > 0 && digits == password[0].Length)
+        {
+            if (password.Contains(inputText.text))
+            {
+                door.OpenTheDoor();
+                //glow green
+                disMat.color = Color.green;
+                blocked = true;
+            }
+            else
+            {                
+                //glow red, and then reset
+                StartCoroutine(GlowRed());
+            }
+        }
+    }
+
+
+    IEnumerator GlowRed()
+    {
+        float startTime = Time.time;
+        float duration = 1f;
+        disMat.color = Color.red;
+        while (Time.time< startTime + duration)
+        {
+            yield return null;
+        }
+        inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
+        disMat.color = basicColor;
+        digits = 0;
+    }
+
+
 }
 
