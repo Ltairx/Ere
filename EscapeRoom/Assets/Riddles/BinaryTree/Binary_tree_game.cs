@@ -95,7 +95,7 @@ public class Binary_tree_game : Riddle
     {
         if(check() == true)
         {
-            Debug.Log("DZIA£A!!!!!!!!!!!!!");
+            //Debug.Log("DZIA£A!!!!!!!!!!!!!");
             solved = true;
             this.OnSolve();
         }

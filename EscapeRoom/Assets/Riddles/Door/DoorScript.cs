@@ -42,13 +42,14 @@ public class DoorScript : MonoBehaviour
 
     public void OpenTheDoor()
     {
-        if (src1 != null && sfx_1 != null)
-        {
-            src1.clip = sfx_1;
-            src1.Play();
-        }
+        
         if (!objectRotated)
         {
+            if (src1 != null && sfx_1 != null)
+            {
+                src1.clip = sfx_1;
+                src1.Play();
+            }
             StartCoroutine(rotate());
             objectRotated = true;
         }

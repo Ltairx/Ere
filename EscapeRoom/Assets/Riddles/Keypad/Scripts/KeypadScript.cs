@@ -8,6 +8,9 @@ using System.Text;
 
 public class KeypadScript : FunctionGettable
 {
+    public AudioSource src1;
+    public AudioClip error_sound;
+
     public TMP_Text inputText;
     public List<string> password;
 
@@ -78,6 +81,7 @@ public class KeypadScript : FunctionGettable
         if (!blocked)
         {
             inputText.text = new string(inputText.text.ToCharArray().Select(c => '_').ToArray());
+            digits = 0;
         }
     }
 
@@ -96,7 +100,13 @@ public class KeypadScript : FunctionGettable
             else
             {                
                 //glow red, and then reset
+
                 StartCoroutine(GlowRed());
+                if (src1 != null && error_sound != null)
+                {
+                    src1.clip = error_sound;
+                    src1.Play();
+                }
             }
         }
     }
