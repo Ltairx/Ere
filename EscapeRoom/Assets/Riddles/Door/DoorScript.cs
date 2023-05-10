@@ -12,6 +12,8 @@ public class DoorScript : MonoBehaviour
     private Quaternion start;
     private Quaternion stop;
 
+    public AudioSource src1;
+    public AudioClip sfx_1;
 
     IEnumerator rotate()
     {
@@ -40,8 +42,14 @@ public class DoorScript : MonoBehaviour
 
     public void OpenTheDoor()
     {
+        
         if (!objectRotated)
         {
+            if (src1 != null && sfx_1 != null)
+            {
+                src1.clip = sfx_1;
+                src1.Play();
+            }
             StartCoroutine(rotate());
             objectRotated = true;
         }

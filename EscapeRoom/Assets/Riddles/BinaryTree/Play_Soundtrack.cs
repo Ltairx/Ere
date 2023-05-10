@@ -38,19 +38,21 @@ public class Play_Soundtrack : MonoBehaviour
         {
             if (in_room == true && src1.volume < volume_level)
             {
-                if(volume_level == 1)
+                /*if(volume_level == 1)
                 {
                     src1.volume += 0.01f;
                 }
                 else
                 {
                     src1.volume += 0.001f;
-                }
-                
+                }*/
+                src1.volume += volume_level / 100;
+
+
             }
             if (in_room == false && src1.volume > 0)
             {
-                
+                /*
                 if (volume_level == 1)
                 {
                     src1.volume -= 0.01f;
@@ -58,7 +60,8 @@ public class Play_Soundtrack : MonoBehaviour
                 else
                 {
                     src1.volume -= 0.001f;
-                }
+                }*/
+                src1.volume -= volume_level / 100;
             }
         }
         else
