@@ -13,14 +13,23 @@ public class PlayerVR : Player
         if (Lzwp.initialized)
         {
             //If left? right? fire button is pressed
-            if (Lzwp.input.flysticks[0].buttons[0].isActive) 
+            if (Lzwp.input.flysticks[0].buttons[0].isActive)
             {
                 leftHand.Interact(); //might need to swap hands XD
             }
+            else
+            {
+                leftHand.StopInteracting();
+            }
+
 
             if (Lzwp.input.flysticks[1].buttons[0].isActive)
             {
                 rightHand.Interact();
+            }
+            else
+            {
+                rightHand.StopInteracting();
             }
         }
     }
