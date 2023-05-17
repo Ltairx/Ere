@@ -12,6 +12,8 @@ namespace Ere.Riddles.RleCompression
         [field: SerializeField] private float openAngle;
         private List<int> result = new List<int>();
 
+        private bool riddleTouched = false;
+
         private void Start()
         {
             if(password.Count == 0)
@@ -28,6 +30,7 @@ namespace Ere.Riddles.RleCompression
 
         public void CheckPassword((int, int) indexAndNumber) 
         {
+            riddleTouched = true;
             result[indexAndNumber.Item1] = indexAndNumber.Item2;
             if (password.OrderBy(x => x).SequenceEqual(result.OrderBy(x => x)))
             {
@@ -37,6 +40,11 @@ namespace Ere.Riddles.RleCompression
 
         public float CheckPercentage()
         {
+            if (!riddleTouched)
+            {
+                return 0;
+            }
+
             var max = password.Count;
             var min = 0;
 
