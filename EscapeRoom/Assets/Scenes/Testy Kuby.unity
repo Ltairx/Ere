@@ -371,6 +371,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 999291762132547439, guid: 50a4201084f80dd4cb5c65c57060d1bc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1352050800971833579, guid: 50a4201084f80dd4cb5c65c57060d1bc,
         type: 3}
       propertyPath: m_RootOrder
@@ -431,7 +436,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player VR
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 999291762132547439, guid: 50a4201084f80dd4cb5c65c57060d1bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50a4201084f80dd4cb5c65c57060d1bc, type: 3}
 --- !u!1 &1900286370
 GameObject:

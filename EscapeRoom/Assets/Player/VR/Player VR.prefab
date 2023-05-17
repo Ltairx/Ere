@@ -343,6 +343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[LzwpOrigin_M]'
       objectReference: {fileID: 0}
+    - target: {fileID: 1036901858813508, guid: 4e989319e1a6746439e05903ce1e807d, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4762045868463618, guid: 4e989319e1a6746439e05903ce1e807d, type: 3}
       propertyPath: m_RootOrder
       value: 3
