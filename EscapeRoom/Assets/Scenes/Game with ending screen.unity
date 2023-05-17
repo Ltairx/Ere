@@ -188,16 +188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapeRoom
       objectReference: {fileID: 0}
-    - target: {fileID: 3819234713749442676, guid: 4227a9ee28e56a04cabbb503dc96f546,
-        type: 3}
-      propertyPath: Aut_bar
-      value: 
-      objectReference: {fileID: 2017013271}
-    - target: {fileID: 3819234713749442676, guid: 4227a9ee28e56a04cabbb503dc96f546,
-        type: 3}
-      propertyPath: Inf_bar
-      value: 
-      objectReference: {fileID: 1250570700}
     - target: {fileID: 6102881932526958902, guid: 4227a9ee28e56a04cabbb503dc96f546,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -391,12 +381,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1250570700 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2667571930566076178, guid: 4227a9ee28e56a04cabbb503dc96f546,
-    type: 3}
-  m_PrefabInstance: {fileID: 703145021}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1680530664
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,22 +505,22 @@ PrefabInstance:
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.17908046
       objectReference: {fileID: 0}
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.98383445
       objectReference: {fileID: 0}
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
@@ -546,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 200.63199
       objectReference: {fileID: 0}
     - target: {fileID: 3541416241523917999, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
@@ -560,9 +544,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35edf594377f43f4bb5829fbd0e44ef6, type: 3}
---- !u!1 &2017013271 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1414478482011152501, guid: 4227a9ee28e56a04cabbb503dc96f546,
-    type: 3}
-  m_PrefabInstance: {fileID: 703145021}
-  m_PrefabAsset: {fileID: 0}

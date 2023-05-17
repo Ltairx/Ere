@@ -12,21 +12,13 @@ public class ButtonController : Riddle
     // Start is called before the first frame update
     void Start()
     {
+        blok.text = n.ToString();
+        trans.text = n.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (n > 9)
-        {
-            n = 1;
-        }
-        if (n < 1)
-        {
-            n = 9;
-        }
-        blok.text = n.ToString();
-        trans.text = n.ToString();
     }
 
     public override Delegate GetFunction(int index)
@@ -45,10 +37,30 @@ public class ButtonController : Riddle
     private void Increment(float not_used)
     {
         n++;
+        if (n > 9)
+        {
+            n = 1;
+        }
+        if (n < 1)
+        {
+            n = 9;
+        }
+        blok.text = n.ToString();
+        trans.text = n.ToString();
     }
 
     private void Decrement(float not_used)
     {
         n--;
+        if (n > 9)
+        {
+            n = 1;
+        }
+        if (n < 1)
+        {
+            n = 9;
+        }
+        blok.text = n.ToString();
+        trans.text = n.ToString();
     }
 }

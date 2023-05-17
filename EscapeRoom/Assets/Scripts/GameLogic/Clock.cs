@@ -10,7 +10,7 @@ public class Clock : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI text;
 
-    const float MAXTIME = 60 * 60; //full hour
+    const float MAXTIME = 15;//60 * 60; //full hour
     public static bool stoppedCounting = false;
     static bool gameManagerCalled = false;
     GameManager.GameManager gameManager;

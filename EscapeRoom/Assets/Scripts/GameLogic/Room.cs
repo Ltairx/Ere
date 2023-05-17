@@ -17,7 +17,7 @@ namespace GameManager
         private Dictionary<Degree, Riddle> riddles = new Dictionary<Degree, Riddle>();
 
         public bool doorToOpen = false;
-        //public Door door; //if doorToPen = true, it will open door automaticaly ---------------------------
+        [SerializeField] DoorScript  door; //if doorToPen = true, it will open door automaticaly ---------------------------
 
         
         public Riddle this[Degree degree]
@@ -47,7 +47,7 @@ namespace GameManager
         {
             if (doorToOpen)
             {
-                //door.Open(); ----------------------------------------------------------
+                door.OpenTheDoor(); 
             }
         }
 

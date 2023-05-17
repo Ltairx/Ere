@@ -23,19 +23,17 @@ public class PercentageDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void Display()
     {
-
         Vector3 scale_inf = InfBar.transform.localScale;
         Vector3 scale_aut = AutBar.transform.localScale;
         float inf_perc = gameManager.CalcDegreeKnowledge(Degree.COMPUTER_SCIENCE);
         float aut_perc = gameManager.CalcDegreeKnowledge(Degree.AUTOMATICS);
 
-        inf_text.text = (inf_perc*100).ToString("0.0") + "% informatykiem";
-        aut_text.text = (aut_perc*100).ToString("0.0") + "% automatykiem";
+        inf_text.text = (inf_perc*100).ToString("0.0") + "%";
+        aut_text.text = (aut_perc*100).ToString("0.0") + "%";
 
         scale_inf.x *= inf_perc;
         scale_aut.x *= aut_perc;

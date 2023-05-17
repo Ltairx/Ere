@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class Number1 : Riddle
+public class Number1 : FunctionGettable
 {
     public TMP_Text text;
     private void SetDigit(bool s)

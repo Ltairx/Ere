@@ -46,13 +46,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 0}
-  degree: 0
+  degree: 1
+  src1: {fileID: 0}
+  fingers_sound: {fileID: 0}
+  arm_sound: {fileID: 0}
+  base_sound: {fileID: 0}
   Base: {fileID: 2206015326939881937}
   Arm1: {fileID: 2644348979064654198}
   Arm2: {fileID: 1752090528956255632}
   Wrist: {fileID: 8380858908641167610}
   Finger1: {fileID: 3575604868293829521}
   Finger2: {fileID: 9169712462566282506}
+  Cube: {fileID: 0}
   commands_text:
   - {fileID: 0}
   - {fileID: 0}

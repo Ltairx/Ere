@@ -80,7 +80,7 @@ public class SnappingHolder : Holder
     protected override void Move(Hand hand)
     {
         //var yRot = transform.rotation.y;
-        var rotation = camera.transform.rotation;
+        var rotation = hand.transform.rotation;
         
         transform.LookAt(transform.position + rotation * Vector3.up, rotation * Vector3.back);
         transform.localRotation = transform.localRotation * Quaternion.Euler(0, 90, 0);
