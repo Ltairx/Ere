@@ -64,14 +64,14 @@ public class Binary_tree_game : Riddle
         }
     }
 
-    public int solved_percent()
+    public float solved_percent()
     {
-        int percent = 0;
+        float percent = 0;
         for(int i = 0; i < 10; i++)
         {
             if (ending_array[i] == node_value_array[i])
             {
-                percent += 10;
+                percent += 0.1f;
             }
         }
 
@@ -100,6 +100,13 @@ public class Binary_tree_game : Riddle
             this.OnSolve();
         }
         //Debug.Log("Procenty" + solved_percent());
+    }
+
+    public override float GetSolvePercentage()
+    {
+       if (solved) return 1f;
+
+       return solved_percent();
     }
 
     public void Update_Value(int number)
