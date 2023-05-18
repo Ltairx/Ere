@@ -15,7 +15,13 @@ namespace GameManager
         [SerializeField] List<Room> room = new List<Room>();
 
 
-        [SerializeField] Image darkener;
+        [SerializeField] Material darkener;
+
+
+        private void Start()
+        {
+            darkener.color = new Color(0, 0, 0, 0);
+        }
 
         /// <summary>
         /// returns value betwwen 0 and 1
@@ -43,7 +49,7 @@ namespace GameManager
 
         IEnumerator DarkTeleport()
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Player player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
             float startTime = Time.time;
             float darkTime = 1f;
@@ -58,10 +64,9 @@ namespace GameManager
             }
 
 
-            //move the player to the gameManager. As simple as that XD
-            player.transform.position = transform.position;
-            trophe.SetActive(false);
-            player.transform.rotation = transform.rotation;
+            //move the player to the gameManager. As simple as that XD            
+            player.SetPlayerPosition(transform.position, transform.rotation);
+            trophe.SetActive(false);            
 
             if (trophe != null)
             {

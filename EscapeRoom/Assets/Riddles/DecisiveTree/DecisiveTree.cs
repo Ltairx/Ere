@@ -193,7 +193,7 @@ public class DecisiveTree : Riddle
     /// <returns></returns>
     public override float GetSolvePercentage()
     {
-        if (!riddleTouched)
+        if (riddleTouched)
         {
             float distance = Math.Max(map.GetSize() - 1 - pos.x, map.GetSize() - 1 - pos.y);
             float maxDistance = 5f;

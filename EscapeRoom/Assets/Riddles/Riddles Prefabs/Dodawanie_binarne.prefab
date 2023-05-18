@@ -146,6 +146,7 @@ MonoBehaviour:
   leverObject: {fileID: 1551365511590160104}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 0
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &1052375955387723960
@@ -288,6 +289,7 @@ MonoBehaviour:
   leverObject: {fileID: 833248693121467489}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 1
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &1057492380232874435
@@ -430,6 +432,7 @@ MonoBehaviour:
   leverObject: {fileID: 5791737525017591701}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 0
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &2389322661698416726
@@ -572,6 +575,7 @@ MonoBehaviour:
   leverObject: {fileID: 4345576038927208571}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 0
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &5848884696023087651
@@ -714,6 +718,7 @@ MonoBehaviour:
   leverObject: {fileID: 3717927753862043732}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 1
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &847733666279031273
@@ -856,6 +861,7 @@ MonoBehaviour:
   leverObject: {fileID: 5205965609413697902}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 0
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &2368800298428362952
@@ -998,6 +1004,7 @@ MonoBehaviour:
   leverObject: {fileID: 5235195584728241007}
   rotationAngle: 30
   rotatingTime: 0.3
+  rotateOnstart: 1
   src1: {fileID: 7348159702761392138}
   sfx_1: {fileID: 8300000, guid: eede40c572f66994c93be7bb81984b74, type: 3}
 --- !u!65 &4536608078983800829

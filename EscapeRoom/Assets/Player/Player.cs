@@ -126,4 +126,10 @@ public class Player : MonoBehaviour
     /// </summary>
     protected virtual void CheckKeys() { }
 
+    public virtual void SetPlayerPosition(Vector3 newPos, Quaternion rotation)
+    {
+        transform.position = newPos;
+        transform.rotation = rotation;
+    }
+
 }

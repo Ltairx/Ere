@@ -9,10 +9,21 @@ public class Lever : Interactable<bool>
     public GameObject leverObject;//the which will be rotated
     public float rotationAngle = 30;//around x Axis
     public float rotatingTime = 1f;
+    [SerializeField] bool rotateOnstart = false;
     private bool On = false;
     private bool rotating = false;
     public AudioSource src1;
     public AudioClip sfx_1;
+
+
+    protected override void Start()
+    {
+        base.Start();
+        if (rotateOnstart)
+        {
+            this.OnStartInteract(null);
+        }
+    }
 
     override protected void OnStartInteract(Hand hand)
     {

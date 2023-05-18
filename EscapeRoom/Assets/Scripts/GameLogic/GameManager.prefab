@@ -218,4 +218,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trophe: {fileID: 0}
-  darkener: {fileID: 5910395150454829226}
+  PercDisplay: {fileID: 0}
+  room: []
+  darkener: {fileID: 2100000, guid: 1f22779af8e37b64691e963273314a5a, type: 2}

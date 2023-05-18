@@ -8,6 +8,8 @@ using UnityEngine;
 /// </summary>
 public class PlayerVR : Player
 {
+    [SerializeField] CharacterController controller;
+
     protected override void CheckKeys()
     {
         if (Lzwp.initialized)
@@ -38,4 +40,14 @@ public class PlayerVR : Player
 
     #endregion
 
+
+
+
+    public override void SetPlayerPosition(Vector3 newPos, Quaternion rotation)
+    {
+        controller.enabled = false;
+        controller.transform.position = newPos;        
+        controller.transform.rotation = rotation;        
+        controller.enabled = true;
+    }
 }

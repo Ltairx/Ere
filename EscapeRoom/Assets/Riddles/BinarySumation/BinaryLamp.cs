@@ -13,7 +13,7 @@ namespace BinarySumation
 
         public bool on = false;
 
-        public Material matOn, matOff;
+        [SerializeField] Material matOn, matOff;
         Renderer renderer;
 
         public bool outputLamp = false;
@@ -70,7 +70,14 @@ namespace BinarySumation
             on = !on;
             if (on)
             {
-                renderer.material = matOn;
+                if (renderer == null)
+                {
+                    GetComponent<Renderer>().material = matOn;
+                }
+                else
+                {
+                    renderer.material = matOn;
+                }
             }
             else
             {
