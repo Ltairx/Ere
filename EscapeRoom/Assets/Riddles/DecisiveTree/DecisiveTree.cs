@@ -16,7 +16,8 @@ public class DecisiveTree : Riddle
     private int simX= 20, simY= 20, simZ= 20;
 
 
-    protected bool simulating = false;        
+    protected bool simulating = false;
+    protected bool riddleTouched = false;
 
     // Update is called once per frame
     void Update()
@@ -32,6 +33,7 @@ public class DecisiveTree : Riddle
 
     void StartSimulating(float notUsedArg)
     {
+        riddleTouched = true;
         if (!simulating)
         {
             simX = x;
@@ -191,16 +193,23 @@ public class DecisiveTree : Riddle
     /// <returns></returns>
     public override float GetSolvePercentage()
     {
-        float distance = Math.Max(map.GetSize() - 1 - pos.x, map.GetSize() - 1 - pos.y);
-        float maxDistance = 5f;
-        if (distance <= 5f)
+        if (!riddleTouched)
         {
-            return 1 - distance / maxDistance;
+            float distance = Math.Max(map.GetSize() - 1 - pos.x, map.GetSize() - 1 - pos.y);
+            float maxDistance = 5f;
+            if (distance <= 5f)
+            {
+                return 1 - distance / maxDistance;
+            }
+            else
+            {
+                return 0;
+            }
         }
         else
         {
             return 0;
-        }                
+        }
     }
 
 }
