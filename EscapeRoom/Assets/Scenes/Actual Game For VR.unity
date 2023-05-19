@@ -230,6 +230,14 @@ PrefabInstance:
       propertyPath: m_RenderMode
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 22415034, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -679
+      objectReference: {fileID: 0}
+    - target: {fileID: 22431670, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -503
+      objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -312,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.961
+      value: 1.758
       objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -325,6 +333,10 @@ PrefabInstance:
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493042, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -821
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
@@ -488,7 +500,7 @@ PrefabInstance:
     - target: {fileID: 1352050800971833579, guid: 50a4201084f80dd4cb5c65c57060d1bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.69
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 1352050800971833579, guid: 50a4201084f80dd4cb5c65c57060d1bc,
         type: 3}
@@ -498,7 +510,7 @@ PrefabInstance:
     - target: {fileID: 1352050800971833579, guid: 50a4201084f80dd4cb5c65c57060d1bc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 1352050800971833579, guid: 50a4201084f80dd4cb5c65c57060d1bc,
         type: 3}
@@ -635,6 +647,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1506017886868278129, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: volume_level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1518946673388675056, guid: 4227a9ee28e56a04cabbb503dc96f546,
         type: 3}
       propertyPath: m_RootOrder
@@ -694,6 +711,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapeRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989890612241087552, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: volume_level
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539491219991622400, guid: 4227a9ee28e56a04cabbb503dc96f546,
+        type: 3}
+      propertyPath: volume_level
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6102881932526958902, guid: 4227a9ee28e56a04cabbb503dc96f546,
         type: 3}
