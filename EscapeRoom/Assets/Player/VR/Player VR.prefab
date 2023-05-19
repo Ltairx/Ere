@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9db62d30380e419175a4b97167058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 0.5
 --- !u!114 &3069622262729315810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e9db62d30380e419175a4b97167058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 0.5
 --- !u!1 &3379197114210815169
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +320,13 @@ PrefabInstance:
       propertyPath: idx
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6559221236215402672, guid: b6165818436e3294c9f7ce5e53106f44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6559221236215402672, guid: b6165818436e3294c9f7ce5e53106f44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b6165818436e3294c9f7ce5e53106f44, type: 3}
 --- !u!1 &1390818392719914 stripped
 GameObject:
