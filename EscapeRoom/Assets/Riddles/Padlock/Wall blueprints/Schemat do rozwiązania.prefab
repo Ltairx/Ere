@@ -1441,6 +1441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room: {fileID: 0}
   degree: 1
+  keypad: {fileID: 0}
+  riddlePassword: 
   s_3: {fileID: 5100833162089935854}
   s_2: {fileID: 5100833161917407675}
   s_1: {fileID: 5100833162417712380}
@@ -2051,7 +2053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ae85992775c61dd4bbc5d921e39af28d, type: 3}
+  m_Texture: {fileID: 2800000, guid: bff9f0e9255fa1047bbf1219cd8fe397, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2848,7 +2850,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: e76f46f6bf1a7c54083bc208cf9c3fe2, type: 3}
+      objectReference: {fileID: 2800000, guid: 132def448c8e5cf4e972a0d339c6bb85, type: 3}
     - target: {fileID: 8232018082481180021, guid: 1656345bd35771440b93d3abdf65ea45,
         type: 3}
       propertyPath: m_RootOrder
@@ -2969,7 +2971,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: e76f46f6bf1a7c54083bc208cf9c3fe2, type: 3}
+      objectReference: {fileID: 2800000, guid: 132def448c8e5cf4e972a0d339c6bb85, type: 3}
     - target: {fileID: 8232018082481180021, guid: 1656345bd35771440b93d3abdf65ea45,
         type: 3}
       propertyPath: m_RootOrder
@@ -3206,7 +3208,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: e76f46f6bf1a7c54083bc208cf9c3fe2, type: 3}
+      objectReference: {fileID: 2800000, guid: 132def448c8e5cf4e972a0d339c6bb85, type: 3}
     - target: {fileID: 8232018082481180021, guid: 1656345bd35771440b93d3abdf65ea45,
         type: 3}
       propertyPath: m_RootOrder
@@ -3443,7 +3445,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: e76f46f6bf1a7c54083bc208cf9c3fe2, type: 3}
+      objectReference: {fileID: 2800000, guid: 132def448c8e5cf4e972a0d339c6bb85, type: 3}
     - target: {fileID: 8232018082481180021, guid: 1656345bd35771440b93d3abdf65ea45,
         type: 3}
       propertyPath: m_RootOrder

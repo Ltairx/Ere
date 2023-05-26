@@ -426,11 +426,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518946673388675056}
     m_Modifications:
+    - target: {fileID: 3189974083431408957, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 0c81d43914d935e41a0a9984657a244b, type: 3}
+    - target: {fileID: 3189974084566501957, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 2ea1947bd1574484ca65044602131863, type: 3}
+    - target: {fileID: 3189974084571347937, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: cdd8d3a357ee70e4f9486e9ebe5bb177, type: 3}
     - target: {fileID: 5006186677049416367, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: m_Name
       value: Flower Room
       objectReference: {fileID: 0}
+    - target: {fileID: 7945926284900259441, guid: 47ef127bb4fcb8b42bae506deb6e7248,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: bff9f0e9255fa1047bbf1219cd8fe397, type: 3}
     - target: {fileID: 8893804926811521771, guid: 47ef127bb4fcb8b42bae506deb6e7248,
         type: 3}
       propertyPath: m_RootOrder

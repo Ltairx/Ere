@@ -16,7 +16,7 @@ public class TransmitationController : Riddle
     public TMP_Text bt2;
     public TMP_Text bt3;
     public TMP_Text bt4;
-    private int a = 1, b = 1, c = 1, d = 1; //rozwiazanie - 5 1 2 4/5 2 1 4
+    private int a = 3, b = 3, c = 3, d = 3; //rozwiazanie - 5 1 2 4/5 2 1 4
     private bool done = false;
     private float total_perc = 0f;
 

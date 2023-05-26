@@ -163,7 +163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: eca0892e18be8f8458403b067bb1bc61, type: 3}
+  m_Texture: {fileID: 2800000, guid: 74438c2c5906648418c07bd4719f639d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -281,6 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   riddle: {fileID: 0}
   funcIndex: 0
+  valToSend: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!65 &2417542964347400173
