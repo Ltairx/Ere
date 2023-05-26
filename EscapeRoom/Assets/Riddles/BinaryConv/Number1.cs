@@ -17,6 +17,7 @@ public class Number1 : FunctionGettable
         {
             text.text = "0";
         }
+        RiddleDecimal.moved = true;
     }
     public override Delegate GetFunction(int index)
     {

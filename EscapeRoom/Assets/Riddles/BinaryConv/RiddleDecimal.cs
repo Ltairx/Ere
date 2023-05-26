@@ -10,6 +10,8 @@ public class RiddleDecimal : Riddle
     public int randomIndex;
     public string binIndex;
 
+    public static bool moved = false;
+
     public int bit1;
     public int bit2;
     public int bit3;
@@ -17,6 +19,7 @@ public class RiddleDecimal : Riddle
     public int bit5;
     public int bit6;
     public int bit7;
+    private float percentage = 0;
 
     public Number1 FirstBinNumber;
     public SecBinaryNumber SecBinaryNumber;
@@ -59,11 +62,27 @@ public class RiddleDecimal : Riddle
         {
             Renderer renderer = LightBulb.GetComponent<Renderer>();
             renderer.material = BulbYellow;
+            OnSolve();
         }
         else
         {
             Renderer renderer = LightBulb.GetComponent<Renderer>();
             renderer.material = BulbColor;
         }
+    }
+
+    public override float GetSolvePercentage()
+    {
+        if (moved)
+        {
+            if (bit1 == int.Parse(FirstBinNumber.text.text)) percentage += 0.14f;
+            if (bit2 == int.Parse(SecBinaryNumber.text.text)) percentage += 0.14f;
+            if (bit3 == int.Parse(ThirdBinaryNumber.text.text)) percentage += 0.14f;
+            if (bit4 == int.Parse(FourthBinaryNumber.text.text)) percentage += 0.14f;
+            if (bit5 == int.Parse(FifthBinaryNumber.text.text)) percentage += 0.14f;
+            if (bit6 == int.Parse(SixthBinaryNumber.text.text)) percentage += 0.15f;
+            if (bit7 == int.Parse(SeventhBinaryNumber.text.text)) percentage += 0.15f;
+        }
+        return percentage;
     }
 }
