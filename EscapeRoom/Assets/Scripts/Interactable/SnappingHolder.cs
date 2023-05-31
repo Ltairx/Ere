@@ -69,6 +69,8 @@ public class SnappingHolder : Holder
         if (!interactedLastFrame && transform.parent == snapParent.transform)
         {
             rigidBody.constraints = RigidbodyConstraints.FreezeAll;
+            transform.localRotation = Quaternion.Euler(0, 90, -90);
+            transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, 0);
         }
         else
         {
@@ -79,13 +81,10 @@ public class SnappingHolder : Holder
     
     protected override void Move(Hand hand)
     {
-        //var yRot = transform.rotation.y;
         var rotation = hand.transform.rotation;
-        
         transform.LookAt(transform.position + rotation * Vector3.up, rotation * Vector3.back);
         transform.localRotation = transform.localRotation * Quaternion.Euler(0, 90, 0);
 
-        
         base.Move(hand);
         
         if (snap && transform.localPosition.z > -snapParentDepth && transform.localPosition.z < snapParentDepth &&
