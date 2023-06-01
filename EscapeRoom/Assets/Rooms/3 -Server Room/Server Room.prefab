@@ -5703,6 +5703,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8302420524299133095, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8302420524351490332, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
         type: 3}
       propertyPath: room
@@ -5788,6 +5793,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rle
       objectReference: {fileID: 0}
+    - target: {fileID: 8302420524395352125, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524395470052, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524519943304, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524587690162, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524733110286, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524744515230, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420524784057218, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8302420525014122342, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5803,6 +5843,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.39
       objectReference: {fileID: 0}
+    - target: {fileID: 8302420525117793788, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525149625070, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525155006592, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8302420525247587277, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5817,6 +5872,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525253128907, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525308194458, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525575064918, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525792066941, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525874123055, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525894936406, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525945085202, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420525977402428, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302420526027194791, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
+        type: 3}
+      propertyPath: DISTANCE
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8408966005589419601, guid: ae81922d9c0cf104ab5c3c41f7d982f0,
         type: 3}
