@@ -27,7 +27,7 @@ public class InteractableInterface : MonoBehaviour
         if(gameObject.GetComponent<Renderer>() != null)
         {            
 
-
+            
             //adding outline material
             hasRenderer = true;
             Material[] mats = new Material[renderer.materials.Length + 1];
@@ -50,7 +50,7 @@ public class InteractableInterface : MonoBehaviour
                 renderer.sharedMaterials = mats;                
                 renderer.GetPropertyBlock(outlineProperties,renderer.materials.Length-1);
             }
-
+            
         }
         else
         {

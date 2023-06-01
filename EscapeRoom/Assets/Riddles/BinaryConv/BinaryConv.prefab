@@ -564,10 +564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5c6d2933d97d74cbb1234332c54aac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 3952829948227616024}
 --- !u!1 &1084257707179071686
 GameObject:
@@ -1205,7 +1201,6 @@ GameObject:
   - component: {fileID: 1680709877019390620}
   - component: {fileID: 756159501608992933}
   - component: {fileID: 8757808050255535738}
-  - component: {fileID: 1125988241150216711}
   m_Layer: 5
   m_Name: text (TMP) (8)
   m_TagString: Untagged
@@ -1328,19 +1323,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1125988241150216711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111131295549726765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94a86460eed134747bdaf8a1f302301e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 8757808050255535738}
 --- !u!1 &2455537794599193278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,10 +1638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a558eb71a2c9c4aa81ad8a2b6ae33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 1104276448715347865}
 --- !u!1 &2938092194688755995
 GameObject:
@@ -2070,10 +2048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dcee2d08ef7ff846bda071f498891c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 2488505304103742938}
 --- !u!1 &3801707034977036876
 GameObject:
@@ -2316,6 +2290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1653102681814448059}
+  bin1: {fileID: 8757808050255535738}
+  bin2: {fileID: 6117109126882797025}
+  bin4: {fileID: 6122208039884361700}
+  bin8: {fileID: 5670616799180008533}
 --- !u!1 &3907720663274457030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,10 +2440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09a8a4e32926bf4fa4059e40b3c1ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 3288380023576050384}
 --- !u!1 &3923830969189543768
 GameObject:
@@ -2707,10 +2681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a7ed70b28786144af554590b0832bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 3457657379812197284}
 --- !u!1 &4066669962966133924
 GameObject:
@@ -2763,7 +2733,6 @@ GameObject:
   - component: {fileID: 8322514798369605411}
   - component: {fileID: 1177826958489052355}
   - component: {fileID: 6122208039884361700}
-  - component: {fileID: 1871868688608484664}
   m_Layer: 5
   m_Name: text (TMP) (6)
   m_TagString: Untagged
@@ -2886,19 +2855,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1871868688608484664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4251139350236807208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6946a042b14c54ea0422a5939a4864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 6122208039884361700}
 --- !u!1 &4369000422959012260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,10 +3095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a65c10fef8566844856b7660e747e6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 2004259931900525040}
 --- !u!1 &4600884664504338252
 GameObject:
@@ -3227,6 +3179,7 @@ MonoBehaviour:
   leverObject: {fileID: 256102660535346314}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &5607741823119015083
@@ -3280,6 +3233,7 @@ MonoBehaviour:
   leverObject: {fileID: 1181859589130280715}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &5875481953340832058
@@ -3293,7 +3247,6 @@ GameObject:
   - component: {fileID: 2167935237856302997}
   - component: {fileID: 5355060235682762352}
   - component: {fileID: 6117109126882797025}
-  - component: {fileID: 3038759583681546523}
   m_Layer: 5
   m_Name: text (TMP) (7)
   m_TagString: Untagged
@@ -3416,19 +3369,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3038759583681546523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5875481953340832058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df4a4a6d7ecf764891a7ad92099fac0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 6117109126882797025}
 --- !u!1 &6629102668475769016
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,10 +3515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e34012280aebf4db340d26cf03126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 0}
-  degree: 0
-  keypad: {fileID: 0}
-  riddlePassword: 
   text: {fileID: 2893018193244490400}
 --- !u!1 &7091327954682984802
 GameObject:
@@ -3663,6 +3599,7 @@ MonoBehaviour:
   leverObject: {fileID: 3123502439749280165}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &7382112327517192484
@@ -3676,7 +3613,6 @@ GameObject:
   - component: {fileID: 2082841670119096862}
   - component: {fileID: 6671041751888629623}
   - component: {fileID: 5670616799180008533}
-  - component: {fileID: 5341064087641518809}
   m_Layer: 5
   m_Name: text (TMP) (5)
   m_TagString: Untagged
@@ -3799,19 +3735,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5341064087641518809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7382112327517192484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36527d84ef898ca458c24b48a9b75135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 5670616799180008533}
 --- !u!1 &7571938352955025346
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,6 +4263,7 @@ MonoBehaviour:
   leverObject: {fileID: 4600884664504338252}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &8713484810418677195
@@ -4393,6 +4317,7 @@ MonoBehaviour:
   leverObject: {fileID: 7091327954682984802}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &8791430213684881986
@@ -4446,6 +4371,7 @@ MonoBehaviour:
   leverObject: {fileID: 2537186177074982961}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1 &8903674539867530963
@@ -16850,6 +16776,7 @@ MonoBehaviour:
   leverObject: {fileID: 7939380788240256462}
   rotationAngle: -60
   rotatingTime: 1
+  rotateOnstart: 0
   src1: {fileID: 0}
   sfx_1: {fileID: 0}
 --- !u!1001 &7208679158507076922
