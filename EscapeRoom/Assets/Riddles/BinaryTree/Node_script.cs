@@ -34,13 +34,14 @@ public class Node_script : Riddle
         value = number;
     }
 
-    void Turn_galka(float kupa)
+    void Turn_galka(float a)
     {
      //   src1.clip = sfx_1;
      //   src1.Play();
         knob.transform.Rotate(new Vector3(0, 90, 0));
         //Debug.Log("Krece sie");
         FindObjectOfType<Binary_tree_game>().Update_Value(knob_number);
+        FindObjectOfType<Binary_tree_game>().In_progress();
     }
     public override System.Delegate GetFunction(int index)
     {

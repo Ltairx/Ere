@@ -11,7 +11,7 @@ public class Binary_tree_game : Riddle
     public int[] node_value_array = new int[10];
     public GameObject[] Nodes = new GameObject[10];
     bool solved = false;
-
+    bool touched = false;
     // Start is called before the first frame update
     override protected void Start()
     {
@@ -67,15 +67,17 @@ public class Binary_tree_game : Riddle
     public float solved_percent()
     {
         float percent = 0;
-        for(int i = 0; i < 10; i++)
+        if(touched == true)
         {
-            if (ending_array[i] == node_value_array[i])
+            for (int i = 0; i < 10; i++)
             {
-                percent += 0.1f;
+                if (ending_array[i] == node_value_array[i])
+                {
+                    percent += 0.1f;
+                }
             }
         }
-
-
+       
         return percent;
     }
     public bool check()
@@ -113,6 +115,11 @@ public class Binary_tree_game : Riddle
     {
         node_value_array[number] = (node_value_array[number] + 1) % 10;
         Nodes[number].GetComponent<Node_script>().Set_knob_value(starting_array[node_value_array[number]]);
+    }
+
+    public void In_progress()
+    {
+        touched = true;
     }
 
     public override System.Delegate GetFunction(int index)
