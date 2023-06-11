@@ -89,7 +89,7 @@ SphereCollider:
   m_GameObject: {fileID: 285973400947014793}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -182,7 +182,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 5937184994143218494}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 3541416241523917999}
   - component: {fileID: 463543391042032608}
   - component: {fileID: 5530633519297174597}
+  - component: {fileID: 6855042639726297922}
   m_Layer: 0
   m_Name: Player PC
   m_TagString: Player
@@ -255,6 +256,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!143 &6855042639726297922
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7467789865697370931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8943665026743018495
 GameObject:
   m_ObjectHideFlags: 0

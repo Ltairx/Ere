@@ -188,7 +188,7 @@ GameObject:
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7012584983545440511
 Transform:
@@ -673,7 +673,7 @@ GameObject:
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3865882437959340778
 Transform:
@@ -947,6 +947,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &987378762436928189 stripped
@@ -1036,6 +1041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_biurko
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d5f8f8498defc4b4c9966ac4d8f44522,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f8f8498defc4b4c9966ac4d8f44522, type: 3}
@@ -1127,6 +1137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &1125205803986749049 stripped
@@ -1216,6 +1231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -1307,6 +1327,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &76051541541657510 stripped
@@ -1396,6 +1421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -1487,6 +1517,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &242577265169826414 stripped
@@ -1576,6 +1611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: podium
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 64fbe203fda0f4c4c9be621f29cb215a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64fbe203fda0f4c4c9be621f29cb215a, type: 3}
@@ -1667,6 +1707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wyswietlacz
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 201c7170d8fca5d4b9564da5cfe31269,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 201c7170d8fca5d4b9564da5cfe31269, type: 3}
 --- !u!1 &1923009138484203463 stripped
@@ -1686,6 +1731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Collider_d\u017Awi\u0119ku "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982926292800911862, guid: 6dc7ec0638a489647b68be2228e697c0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8904136976992392247, guid: 6dc7ec0638a489647b68be2228e697c0,
         type: 3}
@@ -1835,6 +1885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -2151,6 +2206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &3075477500794373856 stripped
@@ -2240,6 +2300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -2331,6 +2396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monitor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
 --- !u!1 &4451606932057754339 stripped
@@ -2420,6 +2490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -2612,6 +2687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: komp
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
 --- !u!1 &6087548747055033064 stripped
@@ -2702,6 +2782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &6244309833083045914 stripped
@@ -2791,6 +2876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -2891,6 +2981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191678533942648029, guid: 0dca6d63e4567b7408b3dfccff29b0ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dca6d63e4567b7408b3dfccff29b0ab, type: 3}
@@ -2993,6 +3088,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -3264,6 +3364,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: myszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
 --- !u!1001 &7782785084629116481
@@ -3347,6 +3452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: aud_krzeslo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
@@ -3438,6 +3548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &8958241377967709026 stripped
@@ -3528,6 +3643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: aud_krzeslo (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a7902c1da85e3774b9de5f9f9872bd18,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7902c1da85e3774b9de5f9f9872bd18, type: 3}
 --- !u!1 &8962425874916900536 stripped
@@ -3543,6 +3663,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2516358937136039201}
     m_Modifications:
+    - target: {fileID: 1958508886727979635, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736305065367773323, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7451509263299606683, guid: 82223a67c2f518740b4beab4c11179e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -3612,6 +3742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zegar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792006485725225505, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82223a67c2f518740b4beab4c11179e0, type: 3}
@@ -3696,6 +3831,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: klawiatura
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
