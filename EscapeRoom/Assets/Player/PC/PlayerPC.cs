@@ -8,28 +8,64 @@ using UnityEngine;
 /// </summary>
 public class PlayerPC : Player
 {
+    CharacterController controller;
+
+    private void Start()
+    {
+        controller = GetComponent<CharacterController>();
+    }
+
+    protected void MoveController(PlayerDirection direction)
+    {
+        Vector3 cameraDirection = camera.transform.forward;
+        cameraDirection.y = 0; //to make it flat
+        cameraDirection.Normalize(); //set length to 1
+
+
+        switch (direction)
+        {
+            case PlayerDirection.FORWARD:
+                //do not change the vector
+                break;
+            case PlayerDirection.BACKWARD:
+                cameraDirection = Quaternion.Euler(0, 180, 0) * cameraDirection;
+                //rotate 180 degrees
+                break;
+            case PlayerDirection.LEFT:
+                cameraDirection = Quaternion.Euler(0, -90, 0) * cameraDirection;
+                break;
+            case PlayerDirection.RIGHT:
+                cameraDirection = Quaternion.Euler(0, 90, 0) * cameraDirection;
+                break;
+
+        }
+
+        controller.Move(cameraDirection * Time.deltaTime);
+    }
+
 
     protected override void CheckKeys()
     {
         //keyboard Movement
         if (Input.GetKey("w"))
         {
-            Move(PlayerDirection.FORWARD);
+            //Move(PlayerDirection.FORWARD);
+            MoveController(PlayerDirection.FORWARD);
         }
 
         if (Input.GetKey("s"))
         {
-            Move(PlayerDirection.BACKWARD);
+            MoveController(PlayerDirection.BACKWARD);
         }
 
         if (Input.GetKey("a"))
         {
-            Move(PlayerDirection.LEFT);
+            MoveController(PlayerDirection.LEFT);
         }
 
         if (Input.GetKey("d"))
         {
-            Move(PlayerDirection.RIGHT);
+            MoveController(PlayerDirection.RIGHT);
         }
 
         //keyboard Rotation

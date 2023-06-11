@@ -56,7 +56,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7990829951175108806
 Transform:
@@ -160,7 +160,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6869739778074868517
 Transform:
@@ -195,7 +195,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6070667258085660228
 Transform:
@@ -295,7 +295,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2882104631512416297
 Transform:
@@ -369,7 +369,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7712790047584134918
 Transform:
@@ -404,7 +404,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2790803135584611564
 Transform:
@@ -467,7 +467,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &925047691252765602
 Transform:
@@ -583,7 +583,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5432798841508498959
 Transform:
@@ -665,7 +665,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5864059915290624111
 Transform:
@@ -772,7 +772,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &239539475598959347
 Transform:
@@ -892,7 +892,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7670991770212637160
 Transform:
@@ -1153,7 +1153,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &163418926883277595
 Transform:
@@ -1211,6 +1211,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Collider_d\u017Awi\u0119ku "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982926292800911862, guid: 6dc7ec0638a489647b68be2228e697c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5982926292800911862, guid: 6dc7ec0638a489647b68be2228e697c0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8904136976992392247, guid: 6dc7ec0638a489647b68be2228e697c0,
         type: 3}
@@ -1361,6 +1371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: myszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
 --- !u!4 &175302312916504985 stripped
@@ -1450,6 +1465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: myszka (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
@@ -1546,6 +1566,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: zeszyt (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
 --- !u!4 &1137917831835548186 stripped
@@ -1635,6 +1660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: myszka
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
@@ -1726,6 +1756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: polka (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32157ccf500edab43907d9cadaca6184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32157ccf500edab43907d9cadaca6184, type: 3}
 --- !u!4 &805277317859681048 stripped
@@ -1815,6 +1850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -1933,10 +1973,114 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5736515526324049455}
     m_Modifications:
+    - target: {fileID: 9277498, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 15912715, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 1831866594549562473}
+    - target: {fileID: 34720269, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 38761183, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 73646818, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 91194630, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 190935755, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 253313827, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 330614592, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 370763605, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 429496333, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 637240391, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 828995924, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 893156931, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 974732873, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179643094, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193532084, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237712670, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308828159, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408763712, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418980786, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483958916, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510775815, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676609112, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1700280765, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780473536, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900388941, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2603815179687232240, guid: 64228135fbaebe14bbfbd677f303d40a,
         type: 3}
       propertyPath: m_RootOrder
@@ -2011,6 +2155,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Keypad Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416346113898666058, guid: 64228135fbaebe14bbfbd677f303d40a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416346113898666058, guid: 64228135fbaebe14bbfbd677f303d40a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64228135fbaebe14bbfbd677f303d40a, type: 3}
@@ -2108,6 +2262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stol (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
 --- !u!1 &2220010344628814422 stripped
@@ -2203,6 +2362,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -2300,6 +2464,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: krzeslo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fdbfe79051f0f141a100a277c8b1cdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdbfe79051f0f141a100a277c8b1cdc, type: 3}
 --- !u!1 &1884512483147182160 stripped
@@ -2395,6 +2564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -2492,6 +2666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: stol
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
 --- !u!4 &1923635554133714465 stripped
@@ -2587,6 +2766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: krzeslo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fdbfe79051f0f141a100a277c8b1cdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdbfe79051f0f141a100a277c8b1cdc, type: 3}
@@ -2684,6 +2868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: klawiatura (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
 --- !u!4 &2807040294526379849 stripped
@@ -2773,6 +2962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zeszyt (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
@@ -2864,6 +3058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: karton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a55ff53feab339840ac7f7f33c1cb5a7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55ff53feab339840ac7f7f33c1cb5a7, type: 3}
 --- !u!4 &2420165567737772042 stripped
@@ -2948,6 +3147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lab_drzwi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ad1e7c4ffc8ee14d863b961a0d5a9c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad1e7c4ffc8ee14d863b961a0d5a9c6, type: 3}
@@ -3039,6 +3243,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tablica
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8748e297f7ae19f42bbfa393bcd25042,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8748e297f7ae19f42bbfa393bcd25042, type: 3}
 --- !u!4 &3267005333002073204 stripped
@@ -3128,6 +3337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -3229,6 +3443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zeszyt (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
@@ -3413,6 +3632,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -3617,6 +3841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: zeszyt (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
 --- !u!4 &3958591295041340207 stripped
@@ -3706,6 +3935,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: karton
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a55ff53feab339840ac7f7f33c1cb5a7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55ff53feab339840ac7f7f33c1cb5a7, type: 3}
@@ -3797,6 +4031,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dlugopis (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0fbb45b57d7ea74ca862aa05c0d09ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0fbb45b57d7ea74ca862aa05c0d09ee, type: 3}
 --- !u!4 &3668408949143230857 stripped
@@ -3812,6 +4051,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5736515526324049455}
     m_Modifications:
+    - target: {fileID: 1958508886727979635, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736305065367773323, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7451509263299606683, guid: 82223a67c2f518740b4beab4c11179e0,
         type: 3}
       propertyPath: m_RootOrder
@@ -3881,6 +4130,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zegar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792006485725225505, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7792006485725225505, guid: 82223a67c2f518740b4beab4c11179e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82223a67c2f518740b4beab4c11179e0, type: 3}
@@ -3965,6 +4224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: myszka
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
@@ -4056,6 +4320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dlugopis
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0fbb45b57d7ea74ca862aa05c0d09ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0fbb45b57d7ea74ca862aa05c0d09ee, type: 3}
 --- !u!4 &4596607397149626564 stripped
@@ -4146,6 +4415,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: polka (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32157ccf500edab43907d9cadaca6184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32157ccf500edab43907d9cadaca6184, type: 3}
 --- !u!4 &4499318082523105716 stripped
@@ -4235,6 +4509,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -4332,6 +4611,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: klawiatura
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
 --- !u!4 &4383349878245955924 stripped
@@ -4421,6 +4705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -4518,6 +4807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: puszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5dec5b161e172d348986652a21641564,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dec5b161e172d348986652a21641564, type: 3}
 --- !u!4 &5122741125506213132 stripped
@@ -4608,6 +4902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: klawiatura
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
 --- !u!4 &5138966899353798771 stripped
@@ -4697,6 +4996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -4794,6 +5098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: krzeslo
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fdbfe79051f0f141a100a277c8b1cdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdbfe79051f0f141a100a277c8b1cdc, type: 3}
 --- !u!4 &4899161319691854877 stripped
@@ -4890,6 +5199,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: klawiatura
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
 --- !u!4 &4725638177973929688 stripped
@@ -4980,6 +5294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: myszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
 --- !u!4 &4660000074808156690 stripped
@@ -5069,6 +5388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: stol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2d34af06b8c6e714296b7317a4593f59,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d34af06b8c6e714296b7317a4593f59, type: 3}
@@ -5166,6 +5490,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: polka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32157ccf500edab43907d9cadaca6184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32157ccf500edab43907d9cadaca6184, type: 3}
 --- !u!4 &5658179100065457243 stripped
@@ -5256,6 +5585,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dlugopis (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a0fbb45b57d7ea74ca862aa05c0d09ee,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0fbb45b57d7ea74ca862aa05c0d09ee, type: 3}
 --- !u!4 &5262426716371047871 stripped
@@ -5345,6 +5679,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -5441,6 +5780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: puszka (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5dec5b161e172d348986652a21641564,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dec5b161e172d348986652a21641564, type: 3}
@@ -5542,6 +5886,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 47dcbe7745ddcc940a6840df30f63053,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47dcbe7745ddcc940a6840df30f63053, type: 3}
 --- !u!4 &5917403521589147854 stripped
@@ -5637,6 +5986,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: zeszyt (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
 --- !u!4 &5770600500623347512 stripped
@@ -5726,6 +6080,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: monitor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
@@ -5817,6 +6176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: myszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
 --- !u!4 &6660513779621047664 stripped
@@ -5906,6 +6270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -6003,6 +6372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: karton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a55ff53feab339840ac7f7f33c1cb5a7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55ff53feab339840ac7f7f33c1cb5a7, type: 3}
 --- !u!4 &6384157730792053605 stripped
@@ -6092,6 +6466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -6189,6 +6568,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monitor 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
 --- !u!4 &7221453257620230290 stripped
@@ -6278,6 +6662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zeszyt (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
@@ -6369,6 +6758,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: zeszyt
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
 --- !u!4 &8032090108297413905 stripped
@@ -6458,6 +6852,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: krzeslo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fdbfe79051f0f141a100a277c8b1cdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdbfe79051f0f141a100a277c8b1cdc, type: 3}
@@ -6555,6 +6954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: krzeslo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fdbfe79051f0f141a100a277c8b1cdc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fdbfe79051f0f141a100a277c8b1cdc, type: 3}
 --- !u!4 &7893645588389654727 stripped
@@ -6651,6 +7055,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: myszka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 556061bef6d41244bbfe367936ce086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 556061bef6d41244bbfe367936ce086b, type: 3}
 --- !u!4 &7818049746834843732 stripped
@@ -6740,6 +7149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: klawiatura
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
@@ -6831,6 +7245,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monitor 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
 --- !u!4 &8632960665500185099 stripped
@@ -6920,6 +7339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: monitor 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
@@ -7011,6 +7435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monitor 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
 --- !u!4 &8425439533383882963 stripped
@@ -7101,6 +7530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: polka (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32157ccf500edab43907d9cadaca6184,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32157ccf500edab43907d9cadaca6184, type: 3}
 --- !u!4 &8378845549053795595 stripped
@@ -7190,6 +7624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -7287,6 +7726,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monitor 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c48667cfb4a4124cad54acc3428a6b7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c48667cfb4a4124cad54acc3428a6b7, type: 3}
 --- !u!4 &8211191753888742442 stripped
@@ -7376,6 +7820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: komp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 155dc43894e463b4bb9783eaa41ecd56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 155dc43894e463b4bb9783eaa41ecd56, type: 3}
@@ -7472,6 +7921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: klawiatura
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
@@ -8035,6 +8489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: klawiatura
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 380b6f072cad7cf4c9c5b95b1dc42f25,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380b6f072cad7cf4c9c5b95b1dc42f25, type: 3}
 --- !u!4 &9124190624350188832 stripped
@@ -8129,6 +8588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: zeszyt (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad0f59c0190242042bc383a4bbff9ac0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad0f59c0190242042bc383a4bbff9ac0, type: 3}
