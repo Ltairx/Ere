@@ -4129,23 +4129,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &15912715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3416346113898666058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2814d0730fd10449e49e54e4a9a6e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src1: {fileID: 8386868598815835225}
-  error_sound: {fileID: 8300000, guid: d367d3be3557cfd4daba25a9a1fa0164, type: 3}
-  inputText: {fileID: 1237712673}
-  password: []
-  door: {fileID: 0}
 --- !u!82 &8386868598815835225
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4242,6 +4225,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &15912715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416346113898666058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2814d0730fd10449e49e54e4a9a6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src1: {fileID: 8386868598815835225}
+  error_sound: {fileID: 8300000, guid: d367d3be3557cfd4daba25a9a1fa0164, type: 3}
+  inputText: {fileID: 1237712673}
+  password: []
+  door: {fileID: 0}
 --- !u!1001 &2569344687042880795
 PrefabInstance:
   m_ObjectHideFlags: 0
