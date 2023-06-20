@@ -120,7 +120,7 @@ public class RobotCommunicator : Riddle
                 Height height = commands_text[iterator].gameObject.AddComponent<Height>();
                 height.SetVal(height_value);
                 queue.Add((Operations.height, height));
-                commands_text[iterator].text = "change height_value " + height_value.ToString();
+                commands_text[iterator].text = "change height_value " + (-height_value).ToString();
             }
             else iterator = 11;
             iterator++;
