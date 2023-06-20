@@ -358,35 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5530633519297174597, guid: 35edf594377f43f4bb5829fbd0e44ef6,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5937184994143218494, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6855042639726297922, guid: 35edf594377f43f4bb5829fbd0e44ef6,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 6855042639726297922, guid: 35edf594377f43f4bb5829fbd0e44ef6,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6855042639726297922, guid: 35edf594377f43f4bb5829fbd0e44ef6,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6855042639726297922, guid: 35edf594377f43f4bb5829fbd0e44ef6,
-        type: 3}
-      propertyPath: m_SlopeLimit
-      value: 73.14
       objectReference: {fileID: 0}
     - target: {fileID: 7467789865697370931, guid: 35edf594377f43f4bb5829fbd0e44ef6,
         type: 3}

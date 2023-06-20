@@ -465,7 +465,27 @@ ModelImporter:
   - first:
       74: -6242158830388346271
     second: NOT.037|NOTAction.001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 55bfee344fbd43b43b3badeedc67e874, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 1cbd10436fa77b541ae196e933830c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 3438ba546e0c2404ba80bafb52e55907, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: logiczny
+    second: {fileID: 2100000, guid: 1deb54a85c0ee9748961381f65fe6d93, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
